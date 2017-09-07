@@ -16,19 +16,25 @@ namespace Assets.Scripts
             ExecuteStrategy
         }
 
-        public State _currentState;
+        private State _currentState;
         private GameObject _player;
         private Vector3 _chaseTargetLocation;
         private Vector3 _currentPosition;
 
-        public float EnemyCatchUpSpeed;
-        public float EnemyNearbySpeed;
-        public float DistanceForCatchingUpState;
-        public float Randomness;
-        public float CameraSpeedFactor;
+        private float _enemyCatchUpSpeed;
+        private float _enemyNearbySpeed;
+        private float _distanceForCatchingUpState;
+        private float _randomness;
+        private float _cameraSpeedFactor;
 
         void Start()
         {
+            _enemyCatchUpSpeed = GameManager.Instance.GameData.EnemySpeedFar;
+            _enemyNearbySpeed = GameManager.Instance.GameData.EnemySpeedNearby;
+            _distanceForCatchingUpState = GameManager.Instance.GameData.EnemyNearbyDistance;
+            _randomness = GameManager.Instance.GameData.EnemyRandomness;
+            _cameraSpeedFactor = GameManager.Instance.GameData.EnemyCameraSpeedFactor;
+            
             _player = GameObject.Find("Player");
             _currentState = State.CatchingUp;
             _chaseTargetLocation = _player.transform.position;
@@ -50,7 +56,7 @@ namespace Assets.Scripts
                     break;
             }
 
-            transform.position = new Vector3(transform.position.x, transform.position.y + (CameraSpeedFactor * GameManager.Instance.GameData.CameraSpeed), transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + (_cameraSpeedFactor * GameManager.Instance.GameData.CameraSpeed), transform.position.z);
         }
 
         IEnumerator RandomChase()
@@ -59,8 +65,8 @@ namespace Assets.Scripts
             {
                 var targetPosition = _player.transform.position;
                 _chaseTargetLocation = new Vector3(
-                    UnityEngine.Random.Range(targetPosition.x - Randomness, targetPosition.x + Randomness),
-                    UnityEngine.Random.Range(targetPosition.y, targetPosition.y + Randomness * 2),
+                    UnityEngine.Random.Range(targetPosition.x - _randomness, targetPosition.x + _randomness),
+                    UnityEngine.Random.Range(targetPosition.y, targetPosition.y + _randomness * 2),
                     targetPosition.z);
 
                 yield return null;
@@ -71,9 +77,9 @@ namespace Assets.Scripts
         {
             var targetPosition = _player.transform.position;
 
-            transform.position = Vector3.MoveTowards(_currentPosition, targetPosition, Time.deltaTime * EnemyCatchUpSpeed);
+            transform.position = Vector3.MoveTowards(_currentPosition, targetPosition, Time.deltaTime * _enemyCatchUpSpeed);
 
-            if (Vector3.Distance(_currentPosition, targetPosition) < DistanceForCatchingUpState / 2) _currentState = State.Nearby;
+            if (Vector3.Distance(_currentPosition, targetPosition) < _distanceForCatchingUpState / 2) _currentState = State.Nearby;
         }
 
         private void Nearby()
@@ -81,9 +87,9 @@ namespace Assets.Scripts
             StartCoroutine("RandomChase");
 
             var targetPosition = _player.transform.position;
-            transform.position = Vector3.MoveTowards(_currentPosition, _chaseTargetLocation, Time.deltaTime * EnemyNearbySpeed);
+            transform.position = Vector3.MoveTowards(_currentPosition, _chaseTargetLocation, Time.deltaTime * _enemyNearbySpeed);
 
-            if (Vector3.Distance(_currentPosition, targetPosition) > DistanceForCatchingUpState) _currentState = State.CatchingUp;
+            if (Vector3.Distance(_currentPosition, targetPosition) > _distanceForCatchingUpState) _currentState = State.CatchingUp;
             if (UnityEngine.Random.Range(0, 1) < 0.0001f) _currentState = State.ExecuteStrategy;
         }
 
@@ -92,7 +98,7 @@ namespace Assets.Scripts
 
         private void ExecuteStrategy()
         {
-            if (Vector3.Distance(_currentPosition, _player.transform.position) > DistanceForCatchingUpState) _currentState = State.CatchingUp;
+            if (Vector3.Distance(_currentPosition, _player.transform.position) > _distanceForCatchingUpState) _currentState = State.CatchingUp;
 
             if (_chosenStrategy == null)
             {
@@ -108,7 +114,7 @@ namespace Assets.Scripts
             {
                 var currentPoint = _screenPointMovementPoints[0];
                 var currentPointAsWorldPoint = Camera.main.ScreenToWorldPoint(currentPoint);
-                transform.position = Vector3.MoveTowards(_currentPosition, currentPointAsWorldPoint, Time.deltaTime * EnemyNearbySpeed);
+                transform.position = Vector3.MoveTowards(_currentPosition, currentPointAsWorldPoint, Time.deltaTime * _enemyNearbySpeed);
 
                 if (Vector3.Distance(transform.position, currentPointAsWorldPoint) < 1) _screenPointMovementPoints.RemoveAt(0);
             }

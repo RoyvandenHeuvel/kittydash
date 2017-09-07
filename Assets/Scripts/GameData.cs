@@ -4,9 +4,11 @@ using System.Collections.Generic;
 [Serializable]
 public class GameData
 {
-    public float EnemySpeed;
-    public float EnemySpeedDownNearby;
+    public float EnemySpeedFar;
+    public float EnemySpeedNearby;
+    public float EnemyNearbyDistance;
     public float EnemyRandomness;
+    public float EnemyCameraSpeedFactor;
 
     public float CameraSpeed;
 

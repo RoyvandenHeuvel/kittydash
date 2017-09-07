@@ -55,6 +55,7 @@ MonoBehaviour:
   NextTile: {fileID: 4021346259010844}
   DecorationGroups:
   - {fileID: 4444138260150482, guid: 4427cd320c842494da3d2e369a1fb5dd, type: 2}
+  - {fileID: 4977959756901860, guid: b5a1c241fcf8e804ab60bfe9c7f2a221, type: 2}
   TileHeight: 10
 --- !u!212 &212943394592025010
 SpriteRenderer:
