@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     float PositionX = 0;
+    
 
     // Update is called once per frame
     void Update()
@@ -25,7 +26,7 @@ public class Coin : MonoBehaviour
             GameManager.Instance.GameData.Inventory.Add(i);
         }
 
-        this.GetComponent<AudioSource>().Play();
+        SoundManager.instance.PlaySound("Pickup");
 
         float random = Random.value;
         if (random < 0.33)
