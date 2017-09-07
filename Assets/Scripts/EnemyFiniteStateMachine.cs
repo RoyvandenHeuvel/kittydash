@@ -8,6 +8,7 @@ namespace Assets.Scripts
     public class EnemyFiniteStateMachine : MonoBehaviour
     {
         public List<Strategy> Strategies;
+        public State CurrentState;
 
         public enum State
         {
@@ -16,11 +17,9 @@ namespace Assets.Scripts
             ExecuteStrategy
         }
 
-        private State _currentState;
         private GameObject _player;
         private Vector3 _chaseTargetLocation;
         private Vector3 _currentPosition;
-
         private float _enemyCatchUpSpeed;
         private float _enemyNearbySpeed;
         private float _distanceForCatchingUpState;
@@ -34,16 +33,16 @@ namespace Assets.Scripts
             _distanceForCatchingUpState = GameManager.Instance.GameData.EnemyNearbyDistance;
             _randomness = GameManager.Instance.GameData.EnemyRandomness;
             _cameraSpeedFactor = GameManager.Instance.GameData.EnemyCameraSpeedFactor;
-            
+
             _player = GameObject.Find("Player");
-            _currentState = State.CatchingUp;
+            CurrentState = State.CatchingUp;
             _chaseTargetLocation = _player.transform.position;
         }
 
         void Update()
         {
             _currentPosition = transform.position;
-            switch (_currentState)
+            switch (CurrentState)
             {
                 case State.CatchingUp:
                     CatchUp();
@@ -79,7 +78,7 @@ namespace Assets.Scripts
 
             transform.position = Vector3.MoveTowards(_currentPosition, targetPosition, Time.deltaTime * _enemyCatchUpSpeed);
 
-            if (Vector3.Distance(_currentPosition, targetPosition) < _distanceForCatchingUpState / 2) _currentState = State.Nearby;
+            if (Vector3.Distance(_currentPosition, targetPosition) < _distanceForCatchingUpState / 2) CurrentState = State.Nearby;
         }
 
         private void Nearby()
@@ -89,8 +88,8 @@ namespace Assets.Scripts
             var targetPosition = _player.transform.position;
             transform.position = Vector3.MoveTowards(_currentPosition, _chaseTargetLocation, Time.deltaTime * _enemyNearbySpeed);
 
-            if (Vector3.Distance(_currentPosition, targetPosition) > _distanceForCatchingUpState) _currentState = State.CatchingUp;
-            if (UnityEngine.Random.Range(0, 1) < 0.0001f) _currentState = State.ExecuteStrategy;
+            if (Vector3.Distance(_currentPosition, targetPosition) > _distanceForCatchingUpState) CurrentState = State.CatchingUp;
+            if (UnityEngine.Random.Range(0, 1) < 0.0001f) CurrentState = State.ExecuteStrategy;
         }
 
         private Strategy _chosenStrategy;
@@ -98,7 +97,7 @@ namespace Assets.Scripts
 
         private void ExecuteStrategy()
         {
-            if (Vector3.Distance(_currentPosition, _player.transform.position) > _distanceForCatchingUpState) _currentState = State.CatchingUp;
+            if (Vector3.Distance(_currentPosition, _player.transform.position) > _distanceForCatchingUpState) CurrentState = State.CatchingUp;
 
             if (_chosenStrategy == null)
             {
@@ -121,10 +120,8 @@ namespace Assets.Scripts
             else
             {
                 _chosenStrategy = null;
-                _currentState = State.Nearby;
+                CurrentState = State.Nearby;
             }
-
         }
-
     }
 }
