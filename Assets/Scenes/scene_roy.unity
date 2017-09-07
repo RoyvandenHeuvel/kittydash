@@ -266,7 +266,7 @@ Prefab:
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
       propertyPath: GameData.EnemyNearbyDistance
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
