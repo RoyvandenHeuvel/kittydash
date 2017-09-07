@@ -733,6 +733,16 @@ Prefab:
       propertyPath: m_Size.x
       value: 0.41858757
       objectReference: {fileID: 0}
+    - target: {fileID: 111395493548163502, guid: 70fd339d728fdf64195d4955fb3e2115,
+        type: 2}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 293edbf58f2c448edb8d9637781a5fea, type: 2}
+    - target: {fileID: 95035077881108446, guid: 70fd339d728fdf64195d4955fb3e2115,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0a26f4cd64b6b410fb2c8845533baa05, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70fd339d728fdf64195d4955fb3e2115, type: 2}
   m_IsPrefabParent: 0
