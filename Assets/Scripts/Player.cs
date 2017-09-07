@@ -10,10 +10,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        xMax = 2f;
+        xMax = 2.8f;
         yMax = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight)).y;
 
-        xMin = -2f;
+        xMin = -2.8f;
         if(yMin == default(float) || Camera.main.ScreenToWorldPoint(Vector3.zero).y > yMin)
         {
             yMin = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
