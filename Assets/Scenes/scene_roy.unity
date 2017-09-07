@@ -236,7 +236,7 @@ Prefab:
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
       propertyPath: GameData.PlayerSpeed
-      value: 0.07
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
@@ -256,7 +256,7 @@ Prefab:
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
       propertyPath: GameData.EnemySpeedNearby
-      value: 3
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
@@ -276,7 +276,7 @@ Prefab:
     - target: {fileID: 114927728762042110, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7,
         type: 2}
       propertyPath: GameData.EnemyCameraSpeedFactor
-      value: 0.95
+      value: 0.93
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7, type: 2}
@@ -675,6 +675,16 @@ Prefab:
     - target: {fileID: 4341139766436504, guid: 70fd339d728fdf64195d4955fb3e2115, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 70248138994795902, guid: 70fd339d728fdf64195d4955fb3e2115,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.0029194355
+      objectReference: {fileID: 0}
+    - target: {fileID: 70248138994795902, guid: 70fd339d728fdf64195d4955fb3e2115,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.41858757
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70fd339d728fdf64195d4955fb3e2115, type: 2}
