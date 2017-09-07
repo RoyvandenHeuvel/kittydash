@@ -21,6 +21,10 @@ GameObject:
   - component: {fileID: 4341139766436504}
   - component: {fileID: 212425093549890886}
   - component: {fileID: 114286632761581848}
+  - component: {fileID: 70248138994795902}
+  - component: {fileID: 111395493548163502}
+  - component: {fileID: 95035077881108446}
+  - component: {fileID: 114056882113108186}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -35,12 +39,69 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402892631011488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -4.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.03, y: -15.27, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70248138994795902
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402892631011488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008663043, y: -0.06472111}
+  m_Size: {x: 0.47602364, y: 0.66846275}
+  m_Direction: 0
+--- !u!95 &95035077881108446
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402892631011488}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e02295ea8330786499b46b77af6c40ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &111395493548163502
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402892631011488}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: deec7b29b3c5b664997f5be56cac6564, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &114056882113108186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402892631011488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ff41d28bc27a34ba8c41d6ee527826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114286632761581848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,18 +115,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Strategies:
   - MovementPoints:
-    - {x: -3, y: 0, z: 0}
-    - {x: 0, y: 4, z: 0}
-    - {x: 3, y: 0, z: 0}
+    - {x: -2, y: 0, z: 0}
+    - {x: -1.5, y: 1, z: 0}
+    - {x: 0, y: 2, z: 0}
+    - {x: 1.5, y: 1, z: 0}
+    - {x: 2, y: 0, z: 0}
   - MovementPoints:
-    - {x: -3, y: 0, z: 0}
-    - {x: 3, y: 1, z: 0}
-    - {x: -3, y: 2, z: 0}
-  _currentState: 0
-  EnemyCatchUpSpeed: 9
-  EnemyNearbySpeed: 5
-  DistanceForCatchingUpState: 6
-  Randomness: 5
+    - {x: 0, y: -2, z: 0}
+    - {x: 0, y: 2, z: 0}
+  - MovementPoints:
+    - {x: -2, y: -2, z: 0}
+    - {x: 2, y: 2, z: 0}
 --- !u!212 &212425093549890886
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -98,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 56e91c49b61bf459ebdb553034c3d217, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,5 +166,5 @@ SpriteRenderer:
   m_Size: {x: 1.8285714, y: 1.8285714}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
