@@ -61,7 +61,7 @@ namespace Assets.Scripts
 
         IEnumerator RandomChase()
         {
-            for (float f = 1.5f; f >= 0; f -= 0.1f)
+            for (float f = 6.0f; f >= 0; f -= 0.1f)
             {
                 var targetPosition = _player.transform.position;
                 _chaseTargetLocation = new Vector3(
