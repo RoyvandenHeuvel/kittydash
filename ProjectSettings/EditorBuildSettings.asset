@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/scene_roy.unity
     guid: b76e63872eb34a647bb261350afc59b3
   - enabled: 1
-    path: Assets/scene_highscore.unity
+    path: Assets/Scenes/scene_highscore.unity
+    guid: cec592c6bc5440c4fad64612ed791db6
+  - enabled: 0
+    path: 
     guid: c63aea5fd0bf29c4c8b746193ab72394

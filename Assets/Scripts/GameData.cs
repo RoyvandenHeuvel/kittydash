@@ -31,6 +31,7 @@ public class GameData
     /// Speed of the camera.
     /// </summary>
     public float CameraSpeed;
+    public string PlayerName;
     /// <summary>
     /// Speed of the player.
     /// </summary>

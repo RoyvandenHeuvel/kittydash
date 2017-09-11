@@ -8,6 +8,7 @@ namespace Assets.Scripts
         {
             // TODO: Proper game over.
             //SoundManager.instance.PlaySound("GameOver");
+            GameManager.Instance.PostHighScore(Mathf.RoundToInt(collision.transform.position.y));
             UnityEngine.SceneManagement.SceneManager.LoadScene("scene_roy");
         }
     }

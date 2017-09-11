@@ -44,6 +44,11 @@ namespace Assets.Scripts
             Save();
         }
 
+        public void PostHighScore(int score)
+        {
+            StartCoroutine(HighScoreUtilities.PostScores("placeholder", score));
+        }
+
         public void Save()
         {
             BinaryFormatter bf = new BinaryFormatter();
