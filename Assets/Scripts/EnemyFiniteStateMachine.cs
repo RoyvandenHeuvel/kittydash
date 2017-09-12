@@ -14,7 +14,7 @@ namespace Assets.Scripts
         {
             CatchingUp,
             Nearby,
-            ExecuteStrategy
+            ExecuteStrategy,
         }
 
         private GameObject _player;

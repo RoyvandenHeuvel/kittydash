@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+
+
     float PositionX = 0;
     
 
@@ -25,7 +27,7 @@ public class Coin : MonoBehaviour
         //    var i = new Item("Camera speed boost!", x => GameManager.Instance.GameData.CameraSpeed = GameManager.Instance.GameData.CameraSpeed + x, 0.005f);
         //    GameManager.Instance.GameData.Inventory.Add(i);
         //}
-
+        GameManager.Instance.GameData.Coins++;
         SoundManager.instance.PlaySound("Pickup");
 
         float random = Random.value;
