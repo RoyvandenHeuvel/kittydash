@@ -19,12 +19,12 @@ public class Coin : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        GameManager.Instance.GameData.Coins++;
-        if (GameManager.Instance.GameData.Coins % 10 == 0 && GameManager.Instance.GameData.Coins > 0)
-        {
-            var i = new Item("Camera speed boost!", x => GameManager.Instance.GameData.CameraSpeed = GameManager.Instance.GameData.CameraSpeed + x, 0.005f);
-            GameManager.Instance.GameData.Inventory.Add(i);
-        }
+        //GameManager.Instance.GameData.Coins++;
+        //if (GameManager.Instance.GameData.Coins % 10 == 0 && GameManager.Instance.GameData.Coins > 0)
+        //{
+        //    var i = new Item("Camera speed boost!", x => GameManager.Instance.GameData.CameraSpeed = GameManager.Instance.GameData.CameraSpeed + x, 0.005f);
+        //    GameManager.Instance.GameData.Inventory.Add(i);
+        //}
 
         SoundManager.instance.PlaySound("Pickup");
 
