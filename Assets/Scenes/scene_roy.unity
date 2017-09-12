@@ -330,6 +330,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 84579045ff79f2940bcb989acc4398f8, type: 3}
+    - target: {fileID: 114700287131081726, guid: 437f544a41c036f4495a9d1f6b73b112,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437f544a41c036f4495a9d1f6b73b112, type: 2}
   m_IsPrefabParent: 0
@@ -847,6 +852,22 @@ Prefab:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: ca8bb166b5af0884394bd45da31a6f7c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1614259030 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1765678162783430, guid: 8578869f129a6d54d84074331d1e540f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1778366500}
+--- !u!114 &1614259035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614259030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e32bb434e817624dbc2098d7802fea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1695747604 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1402892631011488, guid: 70fd339d728fdf64195d4955fb3e2115,
@@ -984,22 +1005,22 @@ Prefab:
     - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -600.31
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 93
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 400
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 114901272415528052, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
@@ -1034,7 +1055,47 @@ Prefab:
     - target: {fileID: 114609496841389872, guid: 8578869f129a6d54d84074331d1e540f,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114768333279932052, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Coins: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 224447246273560030, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224447246273560030, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224447246273560030, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224447246273560030, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224827132923478952, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114090176181760464, guid: 8578869f129a6d54d84074331d1e540f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8578869f129a6d54d84074331d1e540f, type: 2}
