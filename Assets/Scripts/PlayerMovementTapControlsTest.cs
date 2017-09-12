@@ -25,8 +25,8 @@ public class PlayerMovementTapControlsTest : MonoBehaviour
             yMin = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, targetLocation, GameManager.Instance.GameData.PlayerSpeed);
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xMin, xMax), Mathf.Clamp(transform.position.y + GameManager.Instance.GameData.CameraSpeed, yMin, yMax), 0f);
+        transform.position = Vector3.MoveTowards(transform.position, targetLocation, GameManager.Instance.GameData.PlayerSpeed);
     }
 }
