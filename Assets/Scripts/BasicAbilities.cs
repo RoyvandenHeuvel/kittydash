@@ -81,7 +81,7 @@ public class BasicAbilities : MonoBehaviour
     }
     public float Knockback_Cooldown;
     public float Knockback_KnockbackSpeed;
-    public float Knockback_KnockbackDuration;
+    public int Knockback_KnockbackDuration;
     public float Knockback_Range;
 
     private Vector3 _knockbackDirection;
@@ -100,7 +100,7 @@ public class BasicAbilities : MonoBehaviour
 
     private IEnumerator KnockbackCoroutine()
     {
-        for (float i = Knockback_KnockbackDuration; i >= 0; i -= 0.1f)
+        for (int i = Knockback_KnockbackDuration; i >= 0; i--)
         {
             _enemy.gameObject.transform.position += _knockbackDirection * Knockback_KnockbackSpeed;
             yield return null;
@@ -108,7 +108,7 @@ public class BasicAbilities : MonoBehaviour
     }
 
     public float Slow_Cooldown;
-    public float Slow_SlowDuration;
+    public int Slow_SlowDuration;
     public float Slow_SlowFactor;
     public float Slow_Range;
 
