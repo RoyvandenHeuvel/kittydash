@@ -6,15 +6,18 @@ public class Player : MonoBehaviour
 {
     private float xMin, xMax, yMin, yMax;
 
+    void Start()
+    {
+        xMax = 2.8f;
+        xMin = -2.8f;
+    }
+
     void Update()
     {
         Vector3 newPosition = gameObject.transform.position;
 
         // Setting the boundaries.
-        xMax = 2.8f;
         yMax = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight)).y;
-
-        xMin = -2.8f;
         if (yMin == default(float) || Camera.main.ScreenToWorldPoint(Vector3.zero).y > yMin)
         {
             yMin = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
