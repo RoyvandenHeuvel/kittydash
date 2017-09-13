@@ -18,13 +18,16 @@ public class BasicAbilities : MonoBehaviour
 
     public Ability ChosenAbility;
     public float Cooldown;
+    public float CooldownAlpha;
 
     private Image _buttonImage;
     private float _timeSinceLastUse;
+    private Enemy _enemy;
 
     private void Start()
     {
         // Starting off with player being able to use their ability.
+        _enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
         _buttonImage = GameObject.Find("BasicAbility").GetComponent<Image>();
         _timeSinceLastUse = Cooldown;
     }
@@ -35,12 +38,12 @@ public class BasicAbilities : MonoBehaviour
             _timeSinceLastUse += Time.deltaTime;
         if (_timeSinceLastUse < Cooldown)
         {
-            _buttonImage.CrossFadeAlpha(0.1f, Cooldown, false);
+            _buttonImage.canvasRenderer.SetAlpha(CooldownAlpha);
         }
 
         if (_timeSinceLastUse >= Cooldown)
         {
-            _buttonImage.CrossFadeAlpha(1f, Cooldown, false);
+            _buttonImage.canvasRenderer.SetAlpha(1f);
             Ability toUseAbility = GetAbility();
             if (toUseAbility == Ability.Nothing)
                 return;
@@ -71,18 +74,30 @@ public class BasicAbilities : MonoBehaviour
         }
     }
 
-    public float BasicAttack_KnockbackStrength;
+    public float BasicAttack_KnockbackSpeed;
+    public float BasicAttack_KnockbackDuration;
     public float BasicAttack_Range;
+
+    private Vector3 _basicAttackDirection;
+
     private void BasicAttack()
     {
-        var enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
         // TODO: Play animation probably.
-        if (enemy.IsInRange(BasicAttack_Range, this.gameObject.transform))
+        if (_enemy.IsInRange(BasicAttack_Range, this.gameObject.transform))
         {
-            Vector3 direction = enemy.transform.position - this.gameObject.transform.position;
-            direction.Normalize();
+            _basicAttackDirection = _enemy.transform.position - this.gameObject.transform.position;
+            _basicAttackDirection.Normalize();
 
-            enemy.gameObject.transform.position += direction * BasicAttack_KnockbackStrength;
+            StartCoroutine(BasicAttackKnockback());
+        }
+    }
+
+    private IEnumerator BasicAttackKnockback()
+    {
+        for (float i = BasicAttack_KnockbackDuration; i >= 0; i -= 0.1f)
+        {
+            _enemy.gameObject.transform.position += _basicAttackDirection * BasicAttack_KnockbackSpeed;
+            yield return null;
         }
     }
 
