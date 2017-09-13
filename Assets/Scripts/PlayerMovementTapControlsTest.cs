@@ -16,6 +16,8 @@ public class PlayerMovementTapControlsTest : MonoBehaviour
 
     void Update()
     {
+        targetLocation.y += GameManager.Instance.GameData.CameraSpeed;
+
         xMax = 2.8f;
         yMax = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight)).y;
 
