@@ -185,12 +185,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonName: Jump
-  ChosenAbility: 1
-  Cooldown: 5
+  ChosenAbility: 2
   CooldownAlpha: 0.25
-  BasicAttack_KnockbackSpeed: 0.3
-  BasicAttack_KnockbackDuration: 0.8
-  BasicAttack_Range: 2
+  Knockback_Cooldown: 4
+  Knockback_KnockbackSpeed: 0.3
+  Knockback_KnockbackDuration: 0.8
+  Knockback_Range: 2
+  Slow_Cooldown: 12
+  Slow_SlowDuration: 4
+  Slow_SlowFactor: 0.5
+  Slow_Range: 2
 --- !u!114 &165737063
 MonoBehaviour:
   m_ObjectHideFlags: 0

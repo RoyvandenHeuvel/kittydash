@@ -13,35 +13,36 @@ public class BasicAbilities : MonoBehaviour
     public enum Ability
     {
         Nothing = 0,
-        BasicAttack,
+        Knockback,
+        Slow
     }
 
     public Ability ChosenAbility;
-    public float Cooldown;
     public float CooldownAlpha;
 
     private Image _buttonImage;
     private float _timeSinceLastUse;
     private Enemy _enemy;
+    private float _cooldown;
 
     private void Start()
     {
         // Starting off with player being able to use their ability.
         _enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
         _buttonImage = GameObject.Find("BasicAbility").GetComponent<Image>();
-        _timeSinceLastUse = Cooldown;
+        _timeSinceLastUse = _cooldown;
     }
 
     void Update()
     {
-        if (_timeSinceLastUse < Cooldown * 1.5f)
+        if (_timeSinceLastUse < _cooldown * 1.5f)
             _timeSinceLastUse += Time.deltaTime;
-        if (_timeSinceLastUse < Cooldown)
+        if (_timeSinceLastUse < _cooldown)
         {
             _buttonImage.canvasRenderer.SetAlpha(CooldownAlpha);
         }
 
-        if (_timeSinceLastUse >= Cooldown)
+        if (_timeSinceLastUse >= _cooldown)
         {
             _buttonImage.canvasRenderer.SetAlpha(1f);
             Ability toUseAbility = GetAbility();
@@ -68,36 +69,54 @@ public class BasicAbilities : MonoBehaviour
 
         switch (ability)
         {
-            case Ability.BasicAttack:
-                BasicAttack();
+            case Ability.Knockback:
+                _cooldown = Knockback_Cooldown;
+                Knockback();
+                break;
+            case Ability.Slow:
+                _cooldown = Slow_Cooldown;
+                Slow();
                 break;
         }
     }
+    public float Knockback_Cooldown;
+    public float Knockback_KnockbackSpeed;
+    public float Knockback_KnockbackDuration;
+    public float Knockback_Range;
 
-    public float BasicAttack_KnockbackSpeed;
-    public float BasicAttack_KnockbackDuration;
-    public float BasicAttack_Range;
+    private Vector3 _knockbackDirection;
 
-    private Vector3 _basicAttackDirection;
-
-    private void BasicAttack()
+    private void Knockback()
     {
-        // TODO: Play animation probably.
-        if (_enemy.IsInRange(BasicAttack_Range, this.gameObject.transform))
+        // TODO: Play animation & sound.
+        if (_enemy.IsInRange(Knockback_Range, this.gameObject.transform))
         {
-            _basicAttackDirection = _enemy.transform.position - this.gameObject.transform.position;
-            _basicAttackDirection.Normalize();
+            _knockbackDirection = _enemy.transform.position - this.gameObject.transform.position;
+            _knockbackDirection.Normalize();
 
-            StartCoroutine(BasicAttackKnockback());
+            StartCoroutine(KnockbackCoroutine());
         }
     }
 
-    private IEnumerator BasicAttackKnockback()
+    private IEnumerator KnockbackCoroutine()
     {
-        for (float i = BasicAttack_KnockbackDuration; i >= 0; i -= 0.1f)
+        for (float i = Knockback_KnockbackDuration; i >= 0; i -= 0.1f)
         {
-            _enemy.gameObject.transform.position += _basicAttackDirection * BasicAttack_KnockbackSpeed;
+            _enemy.gameObject.transform.position += _knockbackDirection * Knockback_KnockbackSpeed;
             yield return null;
+        }
+    }
+
+    public float Slow_Cooldown;
+    public float Slow_SlowDuration;
+    public float Slow_SlowFactor;
+    public float Slow_Range;
+
+    private void Slow()
+    {
+        if (_enemy.IsInRange(Knockback_Range, this.gameObject.transform))
+        {
+            StartCoroutine(_enemy.GetComponent<EnemyFiniteStateMachine>().Slow(Slow_SlowDuration, Slow_SlowFactor));
         }
     }
 

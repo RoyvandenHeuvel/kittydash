@@ -15,6 +15,7 @@ namespace Assets.Scripts
             CatchingUp,
             Nearby,
             ExecuteStrategy,
+            Slowed
         }
 
         private GameObject _player;
@@ -122,6 +123,22 @@ namespace Assets.Scripts
                 _chosenStrategy = null;
                 CurrentState = State.Nearby;
             }
+        }
+
+        /// <summary>
+        /// Slows the enemy down for a certain amount of time for a certain strength.
+        /// </summary>
+        /// <param name="duration">Amount of frames the slow should last.</param>
+        /// <param name="factor">The factor of the slow, i.e. 0.7 for a 30% slower enemy.</param>
+        /// <returns>IEnumerator for coroutines.</returns>
+        public IEnumerator Slow(float duration, float factor)
+        {
+            _enemyNearbySpeed *= factor;
+            for (float f = duration; f > 0; f -= 0.1f)
+            {
+                yield return null;
+            }
+            _enemyNearbySpeed /= factor;
         }
     }
 }
