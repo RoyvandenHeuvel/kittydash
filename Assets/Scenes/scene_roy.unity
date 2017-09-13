@@ -184,10 +184,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb5d70549e8c9b40b9b61fa8dc891ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonName: BasicAbility
+  ButtonName: Jump
   ChosenAbility: 1
   Cooldown: 3
-  BasicAttack_KnockbackStrength: 5
+  BasicAttack_KnockbackStrength: 2
+  BasicAttack_Range: 3
 --- !u!114 &165737063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1194,7 @@ RectTransform:
   - {fileID: 579147730}
   - {fileID: 1868812388}
   - {fileID: 899592781}
-  - {fileID: 1904006975}
+  - {fileID: 1868901331}
   m_Father: {fileID: 1960926147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1474,7 +1475,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22493834, guid: 5cd0f2565c094c14c89345b5d6081634,
     type: 2}
   m_PrefabInternal: {fileID: 1868812387}
---- !u!1001 &1904006974
+--- !u!1001 &1868901330
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1553,26 +1554,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 189116, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
+      propertyPath: m_Name
+      value: BasicAbility
+      objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11460876, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
-      propertyPath: ButtonName
-      value: BasicAbility
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1904006975 stripped
+--- !u!224 &1868901331 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd,
     type: 2}
-  m_PrefabInternal: {fileID: 1904006974}
+  m_PrefabInternal: {fileID: 1868901330}
 --- !u!4 &1941088778 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4021346259010844, guid: 07043ce927f3fb043a9ebf97130bd092,
