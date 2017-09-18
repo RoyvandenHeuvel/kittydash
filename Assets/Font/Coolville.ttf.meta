@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c59f4d9606920d14dac53836c4a87892
+timeCreated: 1505727051
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Coolville
+  fontNames:
+  - Coolville
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
