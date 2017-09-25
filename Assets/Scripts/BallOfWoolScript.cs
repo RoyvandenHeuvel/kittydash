@@ -20,7 +20,6 @@ public class BallOfWoolScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Ball of wool entered!");
         collider.gameObject.GetComponent<EnemyFiniteStateMachine>().Slow(SlowDuration, SlowFactor);
         GameObject.Destroy(gameObject);
     }
