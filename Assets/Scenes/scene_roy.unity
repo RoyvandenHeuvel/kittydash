@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonName: Jump
-  ChosenAbility: 2
+  ChosenAbility: 3
   CooldownAlpha: 0.25
   Knockback_Cooldown: 7
   Knockback_KnockbackSpeed: 0.3
@@ -195,6 +195,11 @@ MonoBehaviour:
   Slow_SlowDuration: 60
   Slow_SlowFactor: 0.5
   Slow_Range: 2
+  BallOfWool_Cooldown: 3
+  BallOfWool_SlowDuration: 90
+  BallOfWool_SlowFactor: 0.4
+  BallOfWool_GameObject: {fileID: 1256915881838698, guid: ec5018c7d973bee419152af8aea34dbb,
+    type: 2}
 --- !u!114 &165737063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1299,25 @@ GameObject:
   m_PrefabParentObject: {fileID: 1402892631011488, guid: 70fd339d728fdf64195d4955fb3e2115,
     type: 2}
   m_PrefabInternal: {fileID: 1458866547}
+--- !u!50 &1695747605
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695747604}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!82 &1695747612
 AudioSource:
   m_ObjectHideFlags: 0

@@ -8,9 +8,12 @@ namespace Assets.Scripts
         {
             // TODO: Proper game over.
             //SoundManager.instance.PlaySound("GameOver");
-            GameManager.Instance.PostHighScore(Mathf.RoundToInt(GameManager.Instance.GameData.Coins));
-            GameManager.Instance.GameData.Coins = 0;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
+            if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                GameManager.Instance.PostHighScore(Mathf.RoundToInt(GameManager.Instance.GameData.Coins));
+                GameManager.Instance.GameData.Coins = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
+            }
         }
 
         /// <summary>

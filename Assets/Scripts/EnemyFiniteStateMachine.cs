@@ -131,7 +131,7 @@ namespace Assets.Scripts
         /// <param name="duration">Amount of frames the slow should last.</param>
         /// <param name="factor">The factor of the slow, i.e. 0.7 for a 30% slower enemy.</param>
         /// <returns>IEnumerator for coroutines.</returns>
-        public IEnumerator Slow(int duration, float factor)
+        private IEnumerator SlowCoroutine(int duration, float factor)
         {
             _enemyNearbySpeed *= factor;
             for (int f = duration; f > 0; f --)
@@ -139,6 +139,11 @@ namespace Assets.Scripts
                 yield return null;
             }
             _enemyNearbySpeed /= factor;
+        }
+
+        public void Slow(int duration, float factor)
+        {
+            StartCoroutine(SlowCoroutine(duration, factor));
         }
     }
 }

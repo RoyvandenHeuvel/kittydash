@@ -88,12 +88,10 @@ public class CloseCallScript : MonoBehaviour
     private IEnumerator CooldownHandler()
     {
         _closeCallOnCooldown = true;
-
         for (int i = CloseCallCooldown; i > 0; i--)
         {
             yield return null;
         }
-
         _closeCallOnCooldown = false;
     }
 }

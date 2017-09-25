@@ -14,7 +14,8 @@ public class BasicAbilities : MonoBehaviour
     {
         Nothing = 0,
         Knockback,
-        Slow
+        Slow,
+        BallOfWool
     }
 
     public Ability ChosenAbility;
@@ -77,6 +78,10 @@ public class BasicAbilities : MonoBehaviour
                 _cooldown = Slow_Cooldown;
                 Slow();
                 break;
+            case Ability.BallOfWool:
+                _cooldown = BallOfWool_Cooldown;
+                BallOfWool();
+                break;
         }
     }
     public float Knockback_Cooldown;
@@ -116,8 +121,21 @@ public class BasicAbilities : MonoBehaviour
     {
         if (_enemy.IsInRange(Knockback_Range, this.gameObject.transform))
         {
-            StartCoroutine(_enemy.GetComponent<EnemyFiniteStateMachine>().Slow(Slow_SlowDuration, Slow_SlowFactor));
+            _enemy.GetComponent<EnemyFiniteStateMachine>().Slow(Slow_SlowDuration, Slow_SlowFactor);
         }
+    }
+
+    public float BallOfWool_Cooldown;
+    public int BallOfWool_SlowDuration;
+    public float BallOfWool_SlowFactor;
+    public GameObject BallOfWool_GameObject;
+
+    private void BallOfWool()
+    {
+        var ballOfWool = GameObject.Instantiate(BallOfWool_GameObject);
+        ballOfWool.GetComponent<BallOfWoolScript>().SlowFactor = BallOfWool_SlowFactor;
+        ballOfWool.GetComponent<BallOfWoolScript>().SlowDuration = BallOfWool_SlowDuration;
+        ballOfWool.transform.position = this.gameObject.transform.position;
     }
 
 }
