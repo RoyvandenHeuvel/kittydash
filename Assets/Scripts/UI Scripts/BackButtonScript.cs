@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Assets.Scripts;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,6 +33,16 @@ public class BackButtonScript : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            if (SceneManager.GetActiveScene().name.Equals("scene_gameover"))
+            {
+                GameManager.Instance.PostHighScore(GameManager.Instance.GameData.Coins);
+                GameManager.Instance.GameData.Coins = 0;
+            }
+            else
+            {
+                GameManager.Instance.GameData.Coins = 0;
+            }
+
             KittyDashSceneManager.LoadSceneOrQuit(sceneName);       
         }
     }

@@ -10,9 +10,7 @@ namespace Assets.Scripts
             //SoundManager.instance.PlaySound("GameOver");
             if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                GameManager.Instance.PostHighScore(Mathf.RoundToInt(GameManager.Instance.GameData.Coins));
-                GameManager.Instance.GameData.Coins = 0;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("scene_gameover");
             }
         }
 

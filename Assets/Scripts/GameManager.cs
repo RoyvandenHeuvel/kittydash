@@ -46,7 +46,14 @@ namespace Assets.Scripts
 
         public void PostHighScore(int score)
         {
-            StartCoroutine(HighScoreUtilities.PostScores("Unnamed", score));
+            if (GameData.PlayerName != string.Empty && GameData.PlayerName != null)
+            {
+                StartCoroutine(HighScoreUtilities.PostScores(GameData.PlayerName, score));
+            }
+            else
+            {
+                StartCoroutine(HighScoreUtilities.PostScores("Anonymous", score));
+            }
         }
 
         public void Save()
