@@ -46,7 +46,7 @@ namespace Assets.Scripts
 
         public void PostHighScore(int score)
         {
-            StartCoroutine(HighScoreUtilities.PostScores("placeholder", score));
+            StartCoroutine(HighScoreUtilities.PostScores("Unnamed", score));
         }
 
         public void Save()

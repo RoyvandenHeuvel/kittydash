@@ -11,8 +11,8 @@ namespace Assets.Scripts
     public static class HighScoreUtilities
     {
         private const string secretKey = "kitty_dash_highscore_key"; // Edit this value and make sure it's the same as the one stored on the server
-        private const string addScoreURL = "http://localhost/addscore.php?";
-        private const string highscoreURL = "http://localhost/display.php";
+        private const string addScoreURL = "http://145.24.222.182/addscore.php?";
+		private const string highscoreURL = "http://145.24.222.182/display.php";
 
         public static IEnumerator PostScores(string name, int score)
         {
