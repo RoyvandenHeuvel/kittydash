@@ -8,8 +8,8 @@ public class Coin : MonoBehaviour
 
     float PositionX = 0;
 
+    public int Amount;
     public int RewardDuration;
-    public int RewardAmount;
     public int RewardFontSize;
     public Font RewardFont;
     public Color RewardTextColor;
@@ -66,7 +66,7 @@ public class Coin : MonoBehaviour
         //    var i = new Item("Camera speed boost!", x => GameManager.Instance.GameData.CameraSpeed = GameManager.Instance.GameData.CameraSpeed + x, 0.005f);
         //    GameManager.Instance.GameData.Inventory.Add(i);
         //}
-        GameManager.Instance.GameData.Coins++;
+        GameManager.Instance.GameData.Coins += Amount;
         SoundManager.instance.PlaySound("Pickup");
 
         StartCoroutine(RewardCoroutine());

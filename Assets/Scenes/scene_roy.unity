@@ -187,12 +187,12 @@ MonoBehaviour:
   ButtonName: Jump
   ChosenAbility: 2
   CooldownAlpha: 0.25
-  Knockback_Cooldown: 4
+  Knockback_Cooldown: 7
   Knockback_KnockbackSpeed: 0.3
-  Knockback_KnockbackDuration: 0
+  Knockback_KnockbackDuration: 10
   Knockback_Range: 2
-  Slow_Cooldown: 12
-  Slow_SlowDuration: 4
+  Slow_Cooldown: 9
+  Slow_SlowDuration: 60
   Slow_SlowFactor: 0.5
   Slow_Range: 2
 --- !u!114 &165737063
