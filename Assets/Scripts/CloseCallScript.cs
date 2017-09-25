@@ -11,9 +11,10 @@ public class CloseCallScript : MonoBehaviour
     public float CloseCallDistance;
     public int CloseCallDuration;
     public int CloseCallTextDuration;
+    public int CloseCallFontSize;
     public string CloseCallText;
     public Font CloseCallFont;
-    public int CloseCallFontSize;
+    public Color CloseCallTextColor;
 
     void Start()
     {
@@ -71,6 +72,7 @@ public class CloseCallScript : MonoBehaviour
         text.text = CloseCallText;
         text.font = CloseCallFont;
         text.fontSize = CloseCallFontSize;
+        text.color = CloseCallTextColor;
 
         for (int f = CloseCallTextDuration; f > 0; f--)
         {
