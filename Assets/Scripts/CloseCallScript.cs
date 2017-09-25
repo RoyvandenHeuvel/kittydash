@@ -7,6 +7,7 @@ public class CloseCallScript : MonoBehaviour
 {
     private Player _player;
     private bool _coroutineRunning;
+    private bool _closeCallOnCooldown;
 
     public float CloseCallDistance;
     public int CloseCallDuration;
@@ -15,6 +16,8 @@ public class CloseCallScript : MonoBehaviour
     public string CloseCallText;
     public Font CloseCallFont;
     public Color CloseCallTextColor;
+
+    public int CloseCallCooldown;
 
     void Start()
     {
@@ -35,7 +38,7 @@ public class CloseCallScript : MonoBehaviour
     {
         for (int f = CloseCallDuration; f > 0; f--)
         {
-            if (Vector3.Distance(_player.transform.position, transform.position) > CloseCallDistance)
+            if (Vector3.Distance(_player.transform.position, transform.position) > CloseCallDistance || _closeCallOnCooldown)
             {
                 _coroutineRunning = false;
                 yield break;
@@ -43,9 +46,9 @@ public class CloseCallScript : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("CLOSE CALL!!!!");
+        StartCoroutine(CooldownHandler());
         StartCoroutine(CloseCallTextHandler());
-
+        
         _coroutineRunning = false;
     }
 
@@ -65,7 +68,6 @@ public class CloseCallScript : MonoBehaviour
         trans.anchoredPosition = new Vector2(WorldObject_ScreenPosition.x, WorldObject_ScreenPosition.y);
         trans.localScale = new Vector3(1, 1, 1);
 
-
         Text text = UItextGO.AddComponent<Text>();
         text.horizontalOverflow = HorizontalWrapMode.Overflow;
         text.verticalOverflow = VerticalWrapMode.Overflow;
@@ -73,12 +75,25 @@ public class CloseCallScript : MonoBehaviour
         text.font = CloseCallFont;
         text.fontSize = CloseCallFontSize;
         text.color = CloseCallTextColor;
+        
 
-        for (int f = CloseCallTextDuration; f > 0; f--)
+        for (int i = CloseCallTextDuration; i > 0; i--)
         {
             yield return null;
         }
 
         GameObject.Destroy(UItextGO);
+    }
+
+    private IEnumerator CooldownHandler()
+    {
+        _closeCallOnCooldown = true;
+
+        for (int i = CloseCallCooldown; i > 0; i--)
+        {
+            yield return null;
+        }
+
+        _closeCallOnCooldown = false;
     }
 }
