@@ -5,10 +5,18 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
 
-
     float PositionX = 0;
-    
+    int counter = 0;
+    public GameObject reward;
 
+    void Awake()
+    {
+        reward = GameObject.FindGameObjectWithTag("reward");
+    }
+    private void Start()
+    {
+        reward.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +24,15 @@ public class Coin : MonoBehaviour
         {
             Vector3 temp = new Vector3(0f, 13f);
             this.transform.position += temp;
+        }
+        if(counter > 0)
+        {
+            counter--;
+            if(counter == 0)
+            {
+                reward.SetActive(false);
+
+            }
         }
     }
 
@@ -29,6 +46,9 @@ public class Coin : MonoBehaviour
         //}
         GameManager.Instance.GameData.Coins++;
         SoundManager.instance.PlaySound("Pickup");
+        reward.SetActive(true);
+        counter = 20;
+        
 
         float random = Random.value;
         if (random < 0.33)
@@ -44,10 +64,10 @@ public class Coin : MonoBehaviour
             PositionX = 1;
         }
 
-
         PositionX -= this.transform.position.x;
         Vector3 temp = new Vector3(PositionX, 20f);
         this.transform.position += temp;
     }
 
+    
 }
