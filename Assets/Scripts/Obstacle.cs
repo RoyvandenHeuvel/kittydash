@@ -12,7 +12,7 @@ public class Obstacle : MonoBehaviour
             DestroyObject(this.gameObject);
     }
 
-    void OnCollisionEnter2D(Collision2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
         collider.gameObject.GetComponent<Player>().Slow(SlowDuration, SlowFactor);
 

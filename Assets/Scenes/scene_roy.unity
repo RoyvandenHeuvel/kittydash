@@ -376,6 +376,11 @@ Prefab:
     - target: {fileID: 114872115200395388, guid: 07043ce927f3fb043a9ebf97130bd092,
         type: 2}
       propertyPath: DecorationGroups.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114872115200395388, guid: 07043ce927f3fb043a9ebf97130bd092,
+        type: 2}
+      propertyPath: ObstacleCollectableGroups.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4021346259010844, guid: 07043ce927f3fb043a9ebf97130bd092, type: 2}
@@ -431,7 +436,20 @@ Prefab:
         type: 2}
       propertyPath: DecorationGroups.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4977959756901860, guid: b5a1c241fcf8e804ab60bfe9c7f2a221,
+        type: 2}
+    - target: {fileID: 114872115200395388, guid: 07043ce927f3fb043a9ebf97130bd092,
+        type: 2}
+      propertyPath: ObstacleCollectableGroups.Array.data[0]
+      value: 
+      objectReference: {fileID: 1720004787469444, guid: cb22f6a7ea8b961449278e8a544e3a52,
+        type: 2}
+    - target: {fileID: 114872115200395388, guid: 07043ce927f3fb043a9ebf97130bd092,
+        type: 2}
+      propertyPath: ObstacleCollectableGroups.Array.data[1]
+      value: 
+      objectReference: {fileID: 1057057744284900, guid: d0de9b3515f76304095dd1e88a5656fd,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07043ce927f3fb043a9ebf97130bd092, type: 2}
   m_IsPrefabParent: 0
