@@ -51,6 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc7f5ed866c60a4386ca129295ad3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SaveData:
+    PlayerName: 
+    PlayerTotalHealth: 0
+    PlayerCurrentHealth: 0
+    Coins: 0
   GameData:
     EnemySpeedFar: 4
     EnemySpeedNearby: 2.1
@@ -58,8 +63,5 @@ MonoBehaviour:
     EnemyRandomness: 4
     EnemyCameraSpeedFactor: 0.93
     CameraSpeed: 0.03
-    PlayerName: 
     PlayerSpeed: 0.06
-    PlayerTotalHealth: 100
-    PlayerCurrentHealth: 100
     Coins: 0

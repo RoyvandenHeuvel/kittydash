@@ -10,9 +10,9 @@ public class PlayerNameScript : MonoBehaviour
     public void Start()
     {
         //Adds a listener to the main input field and invokes a method when the value changes.
-        if (!string.IsNullOrEmpty(GameManager.Instance.GameData.PlayerName))
+        if (!string.IsNullOrEmpty(GameManager.Instance.SaveData.PlayerName))
         {
-            InputField.text = GameManager.Instance.GameData.PlayerName;
+            InputField.text = GameManager.Instance.SaveData.PlayerName;
         }
         InputField.onEndEdit.AddListener(delegate { ValueChanged(); });
     }
@@ -20,9 +20,9 @@ public class PlayerNameScript : MonoBehaviour
     // Invoked when the value of the text field changes.
     public void ValueChanged()
     {
-        GameManager.Instance.GameData.PlayerName = InputField.text;
+        GameManager.Instance.SaveData.PlayerName = InputField.text;
         GameManager.Instance.PostHighScore(GameManager.Instance.GameData.Coins);
-        GameManager.Instance.GameData.Coins = 0;
+        GameManager.Instance.SaveData.Coins += GameManager.Instance.GameData.Coins;
         SceneManager.LoadScene("scene_highscore");
     }
 }

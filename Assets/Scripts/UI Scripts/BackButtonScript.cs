@@ -35,7 +35,7 @@ public class BackButtonScript : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name.Equals("scene_gameover"))
             {
-                GameManager.Instance.PostHighScore(GameManager.Instance.GameData.Coins);
+                GameManager.Instance.PostHighScore(GameManager.Instance.SaveData.Coins);
                 GameManager.Instance.GameData.Coins = 0;
             }
             else

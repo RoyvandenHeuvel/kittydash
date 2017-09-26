@@ -13,7 +13,7 @@ public class Obstacle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collider)
     {
-        GameManager.Instance.GameData.PlayerCurrentHealth -= Damage;
+        GameManager.Instance.SaveData.PlayerCurrentHealth -= Damage;
 
         DestroyObject(this.gameObject);
     }

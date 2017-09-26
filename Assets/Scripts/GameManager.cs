@@ -16,6 +16,7 @@ namespace Assets.Scripts
             }
         }
 
+        public SaveData SaveData;
         public GameData GameData;
 
         private string saveLocation;
@@ -46,9 +47,9 @@ namespace Assets.Scripts
 
         public void PostHighScore(int score)
         {
-            if (GameData.PlayerName != string.Empty && GameData.PlayerName != null)
+            if (SaveData.PlayerName != string.Empty && SaveData.PlayerName != null)
             {
-                StartCoroutine(HighScoreUtilities.PostScores(GameData.PlayerName, score));
+                StartCoroutine(HighScoreUtilities.PostScores(SaveData.PlayerName, score));
             }
             else
             {
@@ -60,8 +61,8 @@ namespace Assets.Scripts
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Open(saveLocation, FileMode.OpenOrCreate);
-
-            bf.Serialize(fs, GameData);
+            
+            bf.Serialize(fs, SaveData);
             fs.Close();
         }
 
@@ -72,7 +73,7 @@ namespace Assets.Scripts
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream fs = File.Open(saveLocation, FileMode.Open);
 
-                GameData = (GameData)bf.Deserialize(fs);
+                SaveData = (SaveData)bf.Deserialize(fs);
                 fs.Close();
             }
         }
