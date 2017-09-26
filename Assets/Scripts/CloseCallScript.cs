@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,6 +47,7 @@ public class CloseCallScript : MonoBehaviour
             yield return null;
         }
 
+        GameManager.Instance.GameData.CloseCalls++;
         StartCoroutine(CooldownHandler());
         StartCoroutine(CloseCallTextHandler());
         

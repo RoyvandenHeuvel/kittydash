@@ -9,7 +9,7 @@ namespace Assets.Scripts
     {
         public List<Strategy> Strategies;
         public State CurrentState;
-
+        public GameObject SlowAnimation;
         public enum State
         {
             CatchingUp,
@@ -133,11 +133,17 @@ namespace Assets.Scripts
         /// <returns>IEnumerator for coroutines.</returns>
         private IEnumerator SlowCoroutine(int duration, float factor)
         {
+            var slowGO = GameObject.Instantiate(SlowAnimation);
+            slowGO.transform.SetParent(gameObject.transform);
+            slowGO.transform.localPosition = Vector3.zero;
+
             _enemyNearbySpeed *= factor;
             for (int f = duration; f > 0; f --)
             {
                 yield return null;
             }
+
+            GameObject.Destroy(slowGO);
             _enemyNearbySpeed /= factor;
         }
 

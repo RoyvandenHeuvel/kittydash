@@ -39,6 +39,10 @@ public class GameData
     /// Coins the player has in the current session.
     /// </summary>
     public int Coins;
+    /// <summary>
+    /// Close calls the player currently has.
+    /// </summary>
+    public int CloseCalls;
 }
 
 

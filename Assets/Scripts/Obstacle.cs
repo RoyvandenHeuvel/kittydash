@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public int Damage;
+    public int SlowDuration;
+    public float SlowFactor;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class Obstacle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collider)
     {
-        GameManager.Instance.SaveData.PlayerCurrentHealth -= Damage;
+        collider.gameObject.GetComponent<Player>().Slow(SlowDuration, SlowFactor);
 
         DestroyObject(this.gameObject);
     }

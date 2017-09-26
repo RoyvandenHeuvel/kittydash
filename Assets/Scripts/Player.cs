@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using Assets.Scripts;
 using CnControls;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
     private float xMin, xMax, yMin, yMax;
+
+    public GameObject SlowAnimation;
 
     void Start()
     {
@@ -28,5 +31,26 @@ public class Player : MonoBehaviour
         newPosition = new Vector3(Mathf.Clamp(newPosition.x, xMin, xMax), Mathf.Clamp(newPosition.y, yMin, yMax), 0f);
 
         transform.position = newPosition;
+    }
+
+    private IEnumerator SlowCoroutine(int duration, float factor)
+    {
+        var slowGO = GameObject.Instantiate(SlowAnimation);
+        slowGO.transform.SetParent(gameObject.transform);
+        slowGO.transform.localPosition = Vector3.zero;
+
+        GameManager.Instance.GameData.PlayerSpeed  *= factor;
+        for (int f = duration; f > 0; f--)
+        {
+            yield return null;
+        }
+
+        GameObject.Destroy(slowGO);
+        GameManager.Instance.GameData.PlayerSpeed /= factor;
+    }
+
+    public void Slow(int duration, float factor)
+    {
+        StartCoroutine(SlowCoroutine(duration, factor));
     }
 }
