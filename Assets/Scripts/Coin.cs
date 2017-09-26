@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class Coin : MonoBehaviour
 {
-
-    float PositionX = 0;
-
     public int Amount;
     public int RewardDuration;
     public int RewardFontSize;
@@ -17,10 +14,9 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
-        if (this.gameObject.IsLowerThanCamera())
+        if (gameObject.IsLowerThanCamera())
         {
-            Vector3 temp = new Vector3(0f, 13f);
-            this.transform.position += temp;
+            DestroyObject(this.gameObject);
         }
     }
 
@@ -56,39 +52,17 @@ public class Coin : MonoBehaviour
         }
 
         GameObject.Destroy(UItextGO);
+        GameObject.Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        //GameManager.Instance.GameData.Coins++;
-        //if (GameManager.Instance.GameData.Coins % 10 == 0 && GameManager.Instance.GameData.Coins > 0)
-        //{
-        //    var i = new Item("Camera speed boost!", x => GameManager.Instance.GameData.CameraSpeed = GameManager.Instance.GameData.CameraSpeed + x, 0.005f);
-        //    GameManager.Instance.GameData.Inventory.Add(i);
-        //}
         GameManager.Instance.GameData.Coins += Amount;
         SoundManager.instance.PlaySound("Pickup");
 
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(RewardCoroutine());
 
-        float random = Random.value;
-        if (random < 0.33)
-        {
-            PositionX = -1;
-        }
-        if (random > 0.33 && random < 0.66)
-        {
-            PositionX = 0;
-        }
-        if (random > 0.66)
-        {
-            PositionX = 1;
-        }
-
-        PositionX -= this.transform.position.x;
-        Vector3 temp = new Vector3(PositionX, 13f);
-        this.transform.position += temp;
     }
-
-
 }
