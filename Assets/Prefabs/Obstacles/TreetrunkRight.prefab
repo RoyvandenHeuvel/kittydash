@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4524638858376376}
   - component: {fileID: 114719326456192102}
   - component: {fileID: 61983851413886946}
-  - component: {fileID: 50431885317238414}
   - component: {fileID: 212625608320997770}
   m_Layer: 9
   m_Name: TreetrunkRight
@@ -43,26 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50431885317238414
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1620679438883782}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &61983851413886946
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -72,7 +51,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.014226437}
@@ -99,7 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce4d6f01772a5a489fe759fb25dd5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  SlowDuration: 180
+  SlowFactor: 0.7
 --- !u!212 &212625608320997770
 SpriteRenderer:
   m_ObjectHideFlags: 1

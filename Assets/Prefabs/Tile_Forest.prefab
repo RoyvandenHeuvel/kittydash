@@ -56,6 +56,9 @@ MonoBehaviour:
   DecorationGroups:
   - {fileID: 4444138260150482, guid: 4427cd320c842494da3d2e369a1fb5dd, type: 2}
   - {fileID: 4977959756901860, guid: b5a1c241fcf8e804ab60bfe9c7f2a221, type: 2}
+  ObstacleCollectableGroups:
+  - {fileID: 1720004787469444, guid: cb22f6a7ea8b961449278e8a544e3a52, type: 2}
+  - {fileID: 1057057744284900, guid: d0de9b3515f76304095dd1e88a5656fd, type: 2}
   TileHeight: 10
 --- !u!212 &212943394592025010
 SpriteRenderer:

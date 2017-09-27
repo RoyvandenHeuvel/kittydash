@@ -51,8 +51,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc7f5ed866c60a4386ca129295ad3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-    shoes: 1
-    cape: 1
-    suit: 0.1
-    coins: 0
+  SaveData:
+    PlayerName: 
+    PlayerTotalHealth: 0
+    PlayerCurrentHealth: 0
+    Coins: 0
+  GameData:
+    EnemySpeedFar: 4
+    EnemySpeedNearby: 2.1
+    EnemyNearbyDistance: 12
+    EnemyRandomness: 4
+    EnemyCameraSpeedFactor: 0.93
+    CameraSpeed: 0.03
+    PlayerSpeed: 0.06
+    Coins: 0
