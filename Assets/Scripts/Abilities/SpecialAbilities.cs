@@ -87,7 +87,7 @@ public class SpecialAbilities : MonoBehaviour
         if (_enemy.IsInRange(Claw_Range, this.gameObject.transform))
         {
             var clawAnim = GameObject.Instantiate(Claw_Animation);
-            clawAnim.transform.position = _enemy.transform.position;
+            clawAnim.transform.position = new Vector3(_enemy.transform.position.x, _enemy.transform.position.y, _enemy.transform.position.z - 1);
             _enemy.GetComponent<EnemyFiniteStateMachine>().Slow(Claw_SlowDuration, Claw_SlowFactor);
         }
 

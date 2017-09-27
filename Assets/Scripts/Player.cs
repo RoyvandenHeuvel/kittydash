@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     {
         var slowGO = GameObject.Instantiate(SlowAnimation);
         slowGO.transform.SetParent(gameObject.transform);
-        slowGO.transform.localPosition = Vector3.zero;
+        slowGO.transform.localPosition = new Vector3(0, 0, -1);
 
         GameManager.Instance.GameData.PlayerSpeed  *= factor;
         for (int f = duration; f > 0; f--)
