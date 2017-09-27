@@ -712,6 +712,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22400004, guid: bb945e2a87718084184a72db9cf1ee27,
     type: 2}
   m_PrefabInternal: {fileID: 1025322687}
+--- !u!1 &1025322689 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+  m_PrefabInternal: {fileID: 1025322687}
 --- !u!1001 &1126844134
 Prefab:
   m_ObjectHideFlags: 0
@@ -1088,7 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DPadControls: {fileID: 1708226490}
-  JoystickControls: {fileID: 100004, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+  JoystickControls: {fileID: 1025322689}
 --- !u!4 &1483943196
 Transform:
   m_ObjectHideFlags: 0
