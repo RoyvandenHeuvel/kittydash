@@ -66,7 +66,7 @@ public class BasicAbilities : MonoBehaviour
 
         if (_timeSinceLastUse >= _cooldown)
         {
-            _label.text = "READY!";
+            _label.text = "";
 
             _buttonImage.canvasRenderer.SetAlpha(1f);
             Ability toUseAbility = GetAbility();

@@ -184,6 +184,9 @@ MonoBehaviour:
   ButtonName: Jump
   ChosenAbility: 3
   CooldownAlpha: 0.25
+  CooldownFont: {fileID: 12800000, guid: 6731d2860cb0a43c7abc85f55783fe59, type: 3}
+  CooldownFontSize: 28
+  CooldownColor: {r: 0, g: 0, b: 0, a: 1}
   Knockback_Cooldown: 7
   Knockback_KnockbackSpeed: 0.3
   Knockback_KnockbackDuration: 10
