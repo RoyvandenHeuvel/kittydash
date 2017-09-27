@@ -45,8 +45,11 @@ namespace Assets.Scripts
             Save();
         }
 
-        public void PostHighScore(int score)
+        public void PostHighScore()
         {
+            int score = GameData.Coins;
+            SaveData.Coins += score;
+            GameData.Coins = 0;
             if (SaveData.PlayerName != string.Empty && SaveData.PlayerName != null)
             {
                 StartCoroutine(HighScoreUtilities.PostScores(SaveData.PlayerName, score));

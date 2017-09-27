@@ -45,6 +45,12 @@ public class GameData
     public int CloseCalls;
 }
 
+[Serializable]
+public enum Controls
+{
+    DPads = 0,
+    Joystick
+}
 
 /// <summary>
 /// Class containing all data that needs to be saved and is player specific.
@@ -52,6 +58,7 @@ public class GameData
 [Serializable]
 public class SaveData
 {
+    public Controls SelectedControls;
     /// <summary>
     /// Name of the player for high score purposes.
     /// </summary>

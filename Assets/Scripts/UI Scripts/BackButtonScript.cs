@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,8 +34,7 @@ public class BackButtonScript : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name.Equals("scene_gameover"))
             {
-                GameManager.Instance.PostHighScore(GameManager.Instance.SaveData.Coins);
-                GameManager.Instance.GameData.Coins = 0;
+                GameManager.Instance.PostHighScore();
             }
             else
             {

@@ -21,8 +21,7 @@ public class PlayerNameScript : MonoBehaviour
     public void ValueChanged()
     {
         GameManager.Instance.SaveData.PlayerName = InputField.text;
-        GameManager.Instance.PostHighScore(GameManager.Instance.GameData.Coins);
-        GameManager.Instance.SaveData.Coins += GameManager.Instance.GameData.Coins;
+        GameManager.Instance.PostHighScore();
         SceneManager.LoadScene("scene_highscore");
     }
 }
