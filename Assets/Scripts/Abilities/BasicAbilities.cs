@@ -116,7 +116,7 @@ public class BasicAbilities : MonoBehaviour
 
     private void Knockback()
     {
-        // TODO: Play animation & sound.
+        // TODO: Play sound.
         if (_enemy.IsInRange(Knockback_Range, this.gameObject.transform))
         {
             _knockbackDirection = _enemy.transform.position - this.gameObject.transform.position;
