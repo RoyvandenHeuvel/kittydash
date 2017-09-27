@@ -192,9 +192,9 @@ MonoBehaviour:
   Slow_SlowDuration: 60
   Slow_SlowFactor: 0.5
   Slow_Range: 2
-  BallOfWool_Cooldown: 3
-  BallOfWool_SlowDuration: 90
-  BallOfWool_SlowFactor: 0.4
+  BallOfWool_Cooldown: 12
+  BallOfWool_SlowDuration: 300
+  BallOfWool_SlowFactor: 0.3
   BallOfWool_GameObject: {fileID: 1256915881838698, guid: ec5018c7d973bee419152af8aea34dbb,
     type: 2}
 --- !u!114 &165737063
@@ -948,7 +948,7 @@ Prefab:
         type: 2}
       propertyPath: SlowAnimation
       value: 
-      objectReference: {fileID: 1768953935444372, guid: fbcace97e2610504b8409800c6e1aa5b,
+      objectReference: {fileID: 1768953935444372, guid: 96340a678a4a55d41a142b0dc476ad8e,
         type: 2}
     - target: {fileID: 114286632761581848, guid: 70fd339d728fdf64195d4955fb3e2115,
         type: 2}
@@ -1211,19 +1211,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 241
+      value: 114.99997
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 64
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 64
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchorMin.x
@@ -1268,7 +1268,7 @@ Prefab:
         type: 3}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11460876, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: ButtonName
@@ -1711,19 +1711,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 100.14996
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 64
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 64
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_AnchorMin.x
@@ -1764,8 +1764,12 @@ Prefab:
     - target: {fileID: 11499078, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 84fccd5de992684428a15bda0a2d382f,
+      objectReference: {fileID: 21300000, guid: f69f1fded5c33304493ef37f03555423,
         type: 3}
+    - target: {fileID: 22409286, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
   m_IsPrefabParent: 0
