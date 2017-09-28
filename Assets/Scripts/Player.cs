@@ -7,8 +7,7 @@ public class Player : MonoBehaviour
 {
     private float yMin, yMax;
     public float xMin, xMax;
-
-
+    
     public GameObject SlowAnimation;
 
     void Start()

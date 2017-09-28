@@ -138,7 +138,7 @@ namespace Assets.Scripts
             slowGO.transform.localPosition = new Vector3(0, 0, -1);
 
             _enemyNearbySpeed *= factor;
-            for (int f = duration; f > 0; f --)
+            for (int f = duration; f > 0; f--)
             {
                 yield return null;
             }
