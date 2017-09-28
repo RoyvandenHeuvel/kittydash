@@ -997,6 +997,11 @@ Prefab:
       propertyPath: Strategies.Array.data[3].MovementPoints.Array.data[1].y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114698999968445910, guid: 70fd339d728fdf64195d4955fb3e2115,
+        type: 2}
+      propertyPath: CloseCallDistance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70fd339d728fdf64195d4955fb3e2115, type: 2}
   m_IsPrefabParent: 0

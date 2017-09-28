@@ -209,6 +209,7 @@ MonoBehaviour:
     - {x: -2, y: -2, z: 0}
     - {x: 2, y: 2, z: 0}
   CurrentState: 0
+  SlowAnimation: {fileID: 0}
 --- !u!114 &114698999968445910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd48e6eae11a28840a1c1dfe3f3c15c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CloseCallDistance: 1.5
+  CloseCallDistance: 2
   CloseCallDuration: 40
   CloseCallTextDuration: 90
   CloseCallFontSize: 50
