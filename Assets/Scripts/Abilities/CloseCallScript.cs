@@ -26,6 +26,11 @@ public class CloseCallScript : MonoBehaviour
         _player = GameObject.Find("Player").GetComponent<Player>();
     }
 
+    private void OnDestroy()
+    {
+        GameObject.Destroy(UItextGO);
+    }
+
     void Update()
     {
         if (Vector3.Distance(_player.transform.position, transform.position) <= CloseCallDistance && !_coroutineRunning)
@@ -54,11 +59,13 @@ public class CloseCallScript : MonoBehaviour
         _coroutineRunning = false;
     }
 
+    public GameObject UItextGO;
+
     private IEnumerator CloseCallTextHandler()
     {
         var canvasTransform = GameObject.Find("Canvas").transform;
         var canvasRect = GameObject.Find("Canvas").GetComponent<RectTransform>();
-        GameObject UItextGO = new GameObject("CloseCallText");
+        UItextGO = new GameObject("CloseCallText");
         UItextGO.transform.SetParent(canvasTransform);
 
         Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(this.transform.position);
@@ -85,6 +92,7 @@ public class CloseCallScript : MonoBehaviour
         }
 
         GameObject.Destroy(UItextGO);
+        UItextGO = null;
     }
 
     private IEnumerator CooldownHandler()
