@@ -52,16 +52,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveData:
+    SelectedControls: 0
     PlayerName: 
-    PlayerTotalHealth: 0
-    PlayerCurrentHealth: 0
     Coins: 0
   GameData:
-    EnemySpeedFar: 4
-    EnemySpeedNearby: 2.1
+    EnemySpeedFar: 2
+    EnemySpeedNearby: 1.5
     EnemyNearbyDistance: 12
     EnemyRandomness: 4
     EnemyCameraSpeedFactor: 0.93
     CameraSpeed: 0.03
     PlayerSpeed: 0.06
     Coins: 0
+    CloseCalls: 0

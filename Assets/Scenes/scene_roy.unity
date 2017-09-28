@@ -844,6 +844,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114866802628320458, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: ScoreInterval
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82855181363498258, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3081d532684d06046b7ae20afd4d4e18, type: 2}
   m_IsPrefabParent: 0
@@ -1348,31 +1358,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3506a8aaaca73614a86f0d903326d741, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1695747604 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1101001880286554, guid: 3081d532684d06046b7ae20afd4d4e18,
-    type: 2}
-  m_PrefabInternal: {fileID: 1458866547}
---- !u!114 &1695747606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1695747604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beb32423e22cfb74f9e2b9c3fd66aa02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hound: {fileID: 1625470593068270, guid: 07462d0f795305645af1cac0ef48c632, type: 2}
-  xOffsetHound: 0
-  yOffsetHound: -20
-  ScoreInterval: 5
-  WarningText: Release the hound!
-  WarningColor: {r: 1, g: 0, b: 0, a: 1}
-  WarningFontSize: 70
-  WarningFont: {fileID: 12800000, guid: 6731d2860cb0a43c7abc85f55783fe59, type: 3}
-  WarningDuration: 90
 --- !u!1 &1708226490
 GameObject:
   m_ObjectHideFlags: 0
