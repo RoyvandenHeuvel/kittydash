@@ -6,12 +6,14 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     private float yMin, yMax;
+    private float _playerSpeed;
     public float xMin, xMax;
     
     public GameObject SlowAnimation;
 
     void Start()
     {
+        _playerSpeed = GameManager.Instance.GameData.PlayerSpeed;
         xMax = 2.8f;
         xMin = -2.8f;
     }
@@ -27,8 +29,8 @@ public class Player : MonoBehaviour
             yMin = Camera.main.ScreenToWorldPoint(Vector3.zero).y;
         }
 
-        newPosition.x += GameManager.Instance.GameData.PlayerSpeed * CnInputManager.GetAxis("Horizontal");
-        newPosition.y += (GameManager.Instance.GameData.PlayerSpeed * CnInputManager.GetAxis("Vertical")) + GameManager.Instance.GameData.CameraSpeed;
+        newPosition.x += _playerSpeed * CnInputManager.GetAxis("Horizontal");
+        newPosition.y += (_playerSpeed * CnInputManager.GetAxis("Vertical")) + GameManager.Instance.GameData.CameraSpeed;
         newPosition = new Vector3(Mathf.Clamp(newPosition.x, xMin, xMax), Mathf.Clamp(newPosition.y, yMin, yMax), 0f);
 
         transform.position = newPosition;
@@ -40,14 +42,14 @@ public class Player : MonoBehaviour
         slowGO.transform.SetParent(gameObject.transform);
         slowGO.transform.localPosition = new Vector3(0, 0, -1);
 
-        GameManager.Instance.GameData.PlayerSpeed  *= factor;
+        _playerSpeed *= factor;
         for (int f = duration; f > 0; f--)
         {
             yield return null;
         }
 
         GameObject.Destroy(slowGO);
-        GameManager.Instance.GameData.PlayerSpeed /= factor;
+        _playerSpeed /= factor;
     }
 
     public void Slow(int duration, float factor)
