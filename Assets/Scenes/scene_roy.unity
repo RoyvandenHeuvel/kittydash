@@ -847,7 +847,7 @@ Prefab:
     - target: {fileID: 114866802628320458, guid: 3081d532684d06046b7ae20afd4d4e18,
         type: 2}
       propertyPath: ScoreInterval
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 82855181363498258, guid: 3081d532684d06046b7ae20afd4d4e18,
         type: 2}
