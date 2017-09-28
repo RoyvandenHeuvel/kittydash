@@ -5,7 +5,9 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    private float xMin, xMax, yMin, yMax;
+    private float yMin, yMax;
+    public float xMin, xMax;
+
 
     public GameObject SlowAnimation;
 
