@@ -19,19 +19,20 @@ public class SpecialAbilities : MonoBehaviour
     private Image _buttonImage;
     private Enemy _enemy;
     private Enemy _hound;
-    private float _closeCallsRequired;
+    private int _closeCallsRequired;
 
     private void Start()
     {
         GameManager.Instance.GameData.CloseCalls = 0;
-        _enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
+        _closeCallsRequired = GetCooldown();
+        _enemy = GameObject.Find("Enemy (Hunter)").GetComponent<Enemy>();
         _buttonImage = GameObject.Find("SpecialAbility").GetComponent<Image>();
         _buttonImage.canvasRenderer.SetAlpha(UnusableAlpha);
     }
 
     void Update()
     {
-        var tempHound = GameObject.Find("Hound");
+        var tempHound = GameObject.Find("Enemy (Hound)");
         if (tempHound != null)
         {
             _hound = tempHound.GetComponent<Enemy>();
@@ -53,6 +54,20 @@ public class SpecialAbilities : MonoBehaviour
         }
     }
 
+    private int GetCooldown()
+    {
+        switch (ChosenAbility)
+        {
+            case SpecialAbility.Nothing:
+                return int.MaxValue;
+            case SpecialAbility.Claw:
+                return Claw_CloseCallsRequired;
+            default:
+                return int.MaxValue;
+        }
+    }
+
+
     private SpecialAbility GetAbility()
     {
         if (CnInputManager.GetButtonDown(ButtonName))
@@ -70,13 +85,12 @@ public class SpecialAbilities : MonoBehaviour
         switch (ability)
         {
             case SpecialAbility.Claw:
-                _closeCallsRequired = Claw_CloseCallsRequired;
                 Claw();
                 break;
         }
     }
 
-    public float Claw_CloseCallsRequired;
+    public int Claw_CloseCallsRequired;
     public int Claw_SlowDuration;
     public float Claw_SlowFactor;
     public float Claw_Range;

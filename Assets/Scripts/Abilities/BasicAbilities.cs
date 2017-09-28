@@ -35,7 +35,7 @@ public class BasicAbilities : MonoBehaviour
     private void Start()
     {
         // Starting off with player being able to use their ability.
-        _enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
+        _enemy = GameObject.Find("Enemy (Hunter)").GetComponent<Enemy>();
         _buttonImage = GameObject.Find("BasicAbility").GetComponent<Image>();
 
         var newGO = new GameObject("Label");

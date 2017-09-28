@@ -204,6 +204,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114545018690958890, guid: 437f544a41c036f4495a9d1f6b73b112,
+        type: 2}
+      propertyPath: Claw_CloseCallsRequired
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437f544a41c036f4495a9d1f6b73b112, type: 2}
   m_IsPrefabParent: 0

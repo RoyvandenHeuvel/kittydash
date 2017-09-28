@@ -14,7 +14,7 @@ public class CloseCallScript : MonoBehaviour
     public int CloseCallDuration;
     public int CloseCallTextDuration;
     public int CloseCallFontSize;
-    public string CloseCallText;
+    public List<string> CloseCallMessages;
     public Font CloseCallFont;
     public Color CloseCallTextColor;
 
@@ -73,7 +73,7 @@ public class CloseCallScript : MonoBehaviour
         Text text = UItextGO.AddComponent<Text>();
         text.horizontalOverflow = HorizontalWrapMode.Overflow;
         text.verticalOverflow = VerticalWrapMode.Overflow;
-        text.text = CloseCallText;
+        text.text = CloseCallMessages[Random.Range(0, CloseCallMessages.Count)];
         text.font = CloseCallFont;
         text.fontSize = CloseCallFontSize;
         text.color = CloseCallTextColor;
