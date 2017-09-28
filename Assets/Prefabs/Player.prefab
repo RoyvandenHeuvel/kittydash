@@ -21,8 +21,10 @@ GameObject:
   - component: {fileID: 4377513337051530}
   - component: {fileID: 82063208802365678}
   - component: {fileID: 61260292335746560}
-  - component: {fileID: 114700287131081726}
   - component: {fileID: 50359721474502534}
+  - component: {fileID: 114664825143494092}
+  - component: {fileID: 114951596597872026}
+  - component: {fileID: 114545018690958890}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -41,7 +43,7 @@ GameObject:
   - component: {fileID: 212215675988416218}
   - component: {fileID: 95048707468624008}
   m_Layer: 8
-  m_Name: Guy
+  m_Name: Cat (Grey)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +108,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.008164957, y: -0.022799492}
+  m_Offset: {x: 0.00041288137, y: -0.0092334}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -117,7 +119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4607341, y: 0.8946209}
+  m_Size: {x: 0.38321322, y: 0.74345505}
   m_EdgeRadius: 0
 --- !u!82 &82063208802365678
 AudioSource:
@@ -128,7 +130,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 246a2e9924bf1a34eb37b10c64bcfc32, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 84579045ff79f2940bcb989acc4398f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -216,7 +218,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114700287131081726
+--- !u!114 &114545018690958890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959665050225480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a1d0949acd7754c844dbe89f1aa502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonName: Fire1
+  ChosenAbility: 1
+  UnusableAlpha: 0.25
+  Claw_CloseCallsRequired: 3
+  Claw_SlowDuration: 300
+  Claw_SlowFactor: 0.25
+  Claw_Range: 2.5
+  Claw_Animation: {fileID: 1501409436412526, guid: cb6051e70f1b49741b0d33e9b803534e,
+    type: 2}
+--- !u!114 &114664825143494092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959665050225480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb5d70549e8c9b40b9b61fa8dc891ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonName: Jump
+  ChosenAbility: 3
+  CooldownAlpha: 0.25
+  CooldownFont: {fileID: 12800000, guid: 6731d2860cb0a43c7abc85f55783fe59, type: 3}
+  CooldownFontSize: 28
+  CooldownColor: {r: 0, g: 0, b: 0, a: 1}
+  Knockback_Cooldown: 7
+  Knockback_KnockbackSpeed: 0.3
+  Knockback_KnockbackDuration: 10
+  Knockback_Range: 2
+  Slow_Cooldown: 9
+  Slow_SlowDuration: 60
+  Slow_SlowFactor: 0.5
+  Slow_Range: 2
+  BallOfWool_Cooldown: 12
+  BallOfWool_SlowDuration: 300
+  BallOfWool_SlowFactor: 0.3
+  BallOfWool_GameObject: {fileID: 1256915881838698, guid: ec5018c7d973bee419152af8aea34dbb,
+    type: 2}
+--- !u!114 &114951596597872026
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -227,7 +279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9a9073ad6dca44d951785adf78d764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlowAnimation: {fileID: 0}
+  xMin: 0
+  xMax: 0
+  SlowAnimation: {fileID: 1768953935444372, guid: fbcace97e2610504b8409800c6e1aa5b,
+    type: 2}
 --- !u!212 &212215675988416218
 SpriteRenderer:
   m_ObjectHideFlags: 1
