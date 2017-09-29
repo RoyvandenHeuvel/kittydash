@@ -895,6 +895,26 @@ Prefab:
       propertyPath: WarningFontSize
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 70361699400598020, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.0135367215
+      objectReference: {fileID: 0}
+    - target: {fileID: 70361699400598020, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.34363818
+      objectReference: {fileID: 0}
+    - target: {fileID: 70361699400598020, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.052532673
+      objectReference: {fileID: 0}
+    - target: {fileID: 70361699400598020, guid: 3081d532684d06046b7ae20afd4d4e18,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.44609547
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3081d532684d06046b7ae20afd4d4e18, type: 2}
   m_IsPrefabParent: 0
