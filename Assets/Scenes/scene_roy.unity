@@ -1203,7 +1203,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11460876, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: ButtonName
-      value: Fire3
+      value: Fire1
       objectReference: {fileID: 0}
     - target: {fileID: 11499078, guid: 81acfa4b78dfa47499a6c2fd6e521ebd, type: 2}
       propertyPath: m_Color.a
