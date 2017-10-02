@@ -10,9 +10,11 @@ public class Tile : MonoBehaviour
     public List<GameObject> ObstacleCollectableGroups;
     public float TileHeight;
     public AudioClip Music;
+    [Range(0f, 1f)]
+    public float MusicVolume;
 
     private static GameObject _musicHandler;
-    private const int tileChangesRequired = 3;
+    private const int tileChangesRequired = 2;
     private static bool _transitioning;
     private static int _changedTileCount = 0;
     private static GameObject TileToChangeTo;
@@ -24,6 +26,7 @@ public class Tile : MonoBehaviour
         {
             _musicHandler = new GameObject("Background Music Handler");
             _musicHandler.AddComponent<AudioSource>();
+            _musicHandler.GetComponent<AudioSource>().volume = MusicVolume;
             _musicHandler.GetComponent<AudioSource>().loop = true;
         }
 
