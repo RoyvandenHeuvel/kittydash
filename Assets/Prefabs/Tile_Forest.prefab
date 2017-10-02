@@ -64,7 +64,7 @@ MonoBehaviour:
   - {fileID: 1076360218951498, guid: b1d922b544c4f8d48a83817be838d2f6, type: 2}
   TileHeight: 10
   Music: {fileID: 8300000, guid: 4fca7311068b248ccb396841df354014, type: 3}
-  MusicVolume: 0
+  MusicVolume: 0.5
 --- !u!212 &212825562467324938
 SpriteRenderer:
   m_ObjectHideFlags: 1

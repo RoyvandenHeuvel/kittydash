@@ -112,7 +112,7 @@ public class SpecialAbilities : MonoBehaviour
                 var clawAnim = GameObject.Instantiate(Claw_Animation);
 
                 clawAnim.transform.position = _enemy.transform.position;
-                SoundManager.instance.PlaySound("DogDies");
+                SoundManager.instance.PlaySound("DogDead");
 
                 GameObject.Destroy(_hound.gameObject);
             }

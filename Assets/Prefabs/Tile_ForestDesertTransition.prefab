@@ -55,10 +55,12 @@ MonoBehaviour:
   TransitionTile: {fileID: 1769073411862174, guid: 088194219ebbd8b448eef0846acc9c9e,
     type: 2}
   NextTile: {fileID: 1769073411862174, guid: 088194219ebbd8b448eef0846acc9c9e, type: 2}
-  DecorationGroups: []
+  DecorationGroups:
+  - {fileID: 1742388229626818, guid: 2205ac7dba7d75e4ab50de41e4d53317, type: 2}
   ObstacleCollectableGroups: []
   TileHeight: 10
   Music: {fileID: 8300000, guid: 4fca7311068b248ccb396841df354014, type: 3}
+  MusicVolume: 0
 --- !u!212 &212943394592025010
 SpriteRenderer:
   m_ObjectHideFlags: 1
