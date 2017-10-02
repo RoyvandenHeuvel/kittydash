@@ -10,6 +10,10 @@ namespace Assets.Scripts
             //SoundManager.instance.PlaySound("GameOver");
             if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
+                if (GameManager.Instance.GameData.Coins > GameManager.Instance.SaveData.PersonalBest)
+                {
+                    GameManager.Instance.SaveData.PersonalBest = GameManager.Instance.GameData.Coins;
+                }
                 UnityEngine.SceneManagement.SceneManager.LoadScene("scene_gameover");
             }
         }
