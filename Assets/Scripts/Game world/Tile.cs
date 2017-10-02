@@ -9,7 +9,9 @@ public class Tile : MonoBehaviour
     public List<GameObject> DecorationGroups;
     public List<GameObject> ObstacleCollectableGroups;
     public float TileHeight;
+    public AudioClip Music;
 
+    private static GameObject _musicHandler;
     private const int tileChangesRequired = 3;
     private static bool _transitioning;
     private static int _changedTileCount = 0;
@@ -18,6 +20,20 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
+        if (_musicHandler == null)
+        {
+            _musicHandler = new GameObject("Background Music Handler");
+            _musicHandler.AddComponent<AudioSource>();
+            _musicHandler.GetComponent<AudioSource>().loop = true;
+            Debug.Log("Music handler made.");
+        }
+
+        if ((_musicHandler.GetComponent<AudioSource>().clip != null && !_musicHandler.GetComponent<AudioSource>().clip.name.Equals(Music.name)) || _musicHandler.GetComponent<AudioSource>().clip == null)
+        {
+            _musicHandler.GetComponent<AudioSource>().clip = Music;
+            _musicHandler.GetComponent<AudioSource>().Play();
+        }
+
         if (_transitioning)
         {
             if (_changedTileCount <= tileChangesRequired)
