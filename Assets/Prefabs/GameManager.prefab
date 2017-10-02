@@ -55,8 +55,9 @@ MonoBehaviour:
     SelectedControls: 0
     PlayerName: 
     Coins: 0
+    PersonalBest: 0
   GameData:
-    ScoreTileInterval: 20
+    ScoreTileInterval: 200
     EnemySpeedFar: 2
     EnemySpeedNearby: 1.5
     EnemyNearbyDistance: 12

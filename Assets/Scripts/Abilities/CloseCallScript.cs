@@ -84,6 +84,7 @@ public class CloseCallScript : MonoBehaviour
         text.font = CloseCallFont;
         text.fontSize = CloseCallFontSize;
         text.color = CloseCallTextColor;
+        SoundManager.instance.PlaySound("Close");
         
 
         for (int i = CloseCallTextDuration; i > 0; i--)
