@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu.unity
     guid: ff5efe26a08625940aba2e31664c5e0d
   - enabled: 1
-    path: Assets/Scenes/scene_roy.unity
+    path: Assets/Scenes/Scene_Ingame.unity
     guid: b76e63872eb34a647bb261350afc59b3
   - enabled: 1
     path: Assets/Scenes/scene_highscore.unity
