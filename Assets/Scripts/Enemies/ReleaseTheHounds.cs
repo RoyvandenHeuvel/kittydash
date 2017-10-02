@@ -54,6 +54,7 @@ public class ReleaseTheHounds : MonoBehaviour
         label.color = WarningColor;
         label.transform.localPosition = Vector3.zero;
         label.text = WarningText;
+        SoundManager.instance.PlaySound("DogSpawn");
 
         StartCoroutine(DeleteAfter(WarningDuration, newGO));
     }

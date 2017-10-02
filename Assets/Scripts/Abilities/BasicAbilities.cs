@@ -159,6 +159,7 @@ public class BasicAbilities : MonoBehaviour
         ballOfWool.GetComponent<BallOfWoolScript>().SlowFactor = BallOfWool_SlowFactor;
         ballOfWool.GetComponent<BallOfWoolScript>().SlowDuration = BallOfWool_SlowDuration;
         ballOfWool.transform.position = this.gameObject.transform.position;
+        SoundManager.instance.PlaySound("Toy");
     }
 
 }

@@ -20,6 +20,7 @@ public class Sound
     {
         source = _source;
         source.clip = clip;
+        
     }
 
     public void Play()
@@ -47,6 +48,7 @@ public class SoundManager : MonoBehaviour {
             instance = this;
 
         }
+
     }
 
     private void Start()
