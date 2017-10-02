@@ -12,7 +12,7 @@ public class Tile : MonoBehaviour
     public AudioClip Music;
 
     private static GameObject _musicHandler;
-    private const int tileChangesRequired = 3;
+    private const int tileChangesRequired = 2;
     private static bool _transitioning;
     private static int _changedTileCount = 0;
     private static GameObject TileToChangeTo;
