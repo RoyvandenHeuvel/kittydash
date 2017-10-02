@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Coin : MonoBehaviour
 {
+    private GameObject UItextGO;
+
     public int Amount;
     public int RewardDuration;
     public int RewardFontSize;
@@ -16,6 +18,7 @@ public class Coin : MonoBehaviour
     {
         if (gameObject.IsLowerThanCamera())
         {
+            Destroy(UItextGO);
             DestroyObject(this.gameObject);
         }
     }
@@ -24,7 +27,7 @@ public class Coin : MonoBehaviour
     {
         var canvasTransform = GameObject.Find("Canvas").transform;
         var canvasRect = GameObject.Find("Canvas").GetComponent<RectTransform>();
-        GameObject UItextGO = new GameObject("RewardText");
+        UItextGO = new GameObject("RewardText");
         UItextGO.transform.SetParent(canvasTransform);
 
         Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(this.transform.position);

@@ -4,13 +4,59 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public Transform NextTile;
-    public List<Transform> DecorationGroups;
+    public GameObject TransitionTile;
+    public GameObject NextTile;
+    public List<GameObject> DecorationGroups;
     public List<GameObject> ObstacleCollectableGroups;
     public float TileHeight;
+    public AudioClip Music;
+
+    private static GameObject _musicHandler;
+    private const int tileChangesRequired = 3;
+    private static bool _transitioning;
+    private static int _changedTileCount = 0;
+    private static GameObject TileToChangeTo;
+    private static int _tileChanges = 1;
 
     void Start()
     {
+        if (_musicHandler == null)
+        {
+            _musicHandler = new GameObject("Background Music Handler");
+            _musicHandler.AddComponent<AudioSource>();
+            _musicHandler.GetComponent<AudioSource>().loop = true;
+        }
+
+        if ((_musicHandler.GetComponent<AudioSource>().clip != null && !_musicHandler.GetComponent<AudioSource>().clip.name.Equals(Music.name)) || _musicHandler.GetComponent<AudioSource>().clip == null)
+        {
+            _musicHandler.GetComponent<AudioSource>().clip = Music;
+            _musicHandler.GetComponent<AudioSource>().Play();
+        }
+
+        if (_transitioning)
+        {
+            if (_changedTileCount <= tileChangesRequired)
+            {
+                _changedTileCount++;
+                NextTile = TileToChangeTo;
+            }
+            else
+            {
+                _transitioning = false;
+                _changedTileCount = 0;
+            }
+        }
+
+        if (GameManager.Instance.GameData.Coins - (GameManager.Instance.GameData.ScoreTileInterval * _tileChanges) >= 0)
+        {
+            _tileChanges++;
+            NextTile = TransitionTile;
+            TileToChangeTo = TransitionTile.GetComponent<Tile>().NextTile;
+            _changedTileCount++;
+            _transitioning = true;
+        }
+
+
         gameObject.transform.localPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
 
         if (DecorationGroups.Count > 0)
@@ -20,7 +66,7 @@ public class Tile : MonoBehaviour
 
             var decorationInstantiated = Instantiate(decoration);
             decorationInstantiated.name = "Decoration group (Generated)";
-            decorationInstantiated.SetParent(GameObject.Find(Layers.Middleground).gameObject.transform);
+            decorationInstantiated.transform.SetParent(GameObject.Find(Layers.Middleground).gameObject.transform);
         }
 
         if (ObstacleCollectableGroups.Count > 0)
@@ -40,10 +86,10 @@ public class Tile : MonoBehaviour
     {
         if (gameObject.IsLowerThanCamera() && !gameObject.IsHigherThanCamera())
         {
-            this.NextTile.transform.position = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
-            var nextTileGameObject = Instantiate(this.NextTile);
+            NextTile.transform.position = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
+            var nextTileGameObject = Instantiate(NextTile);
             nextTileGameObject.name = "Tile (Generated)";
-            nextTileGameObject.SetParent(GameObject.Find(Layers.Background).transform);
+            nextTileGameObject.transform.SetParent(GameObject.Find(Layers.Background).transform);
 
             DestroyObject(gameObject);
         }

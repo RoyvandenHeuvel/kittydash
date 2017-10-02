@@ -110,8 +110,12 @@ public class SpecialAbilities : MonoBehaviour
             if (_hound.IsInRange(Claw_Range, this.gameObject.transform))
             {
                 var clawAnim = GameObject.Instantiate(Claw_Animation);
+<<<<<<< HEAD
                 clawAnim.transform.position = _enemy.transform.position;
                 SoundManager.instance.PlaySound("DogDies");
+=======
+                clawAnim.transform.position = _hound.transform.position;
+>>>>>>> e5be68addda4aa8f7295e476d3b9c8a9e83c161c
                 GameObject.Destroy(_hound.gameObject);
             }
         }
