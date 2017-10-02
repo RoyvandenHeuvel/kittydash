@@ -25,7 +25,6 @@ public class Tile : MonoBehaviour
             _musicHandler = new GameObject("Background Music Handler");
             _musicHandler.AddComponent<AudioSource>();
             _musicHandler.GetComponent<AudioSource>().loop = true;
-            Debug.Log("Music handler made.");
         }
 
         if ((_musicHandler.GetComponent<AudioSource>().clip != null && !_musicHandler.GetComponent<AudioSource>().clip.name.Equals(Music.name)) || _musicHandler.GetComponent<AudioSource>().clip == null)
