@@ -68,4 +68,8 @@ public class SaveData
     /// Total coins the player possesses.
     /// </summary>
     public int Coins;
+    /// <summary>
+    /// The player's personal highest score.
+    /// </summary>
+    public int PersonalBest;
 }
