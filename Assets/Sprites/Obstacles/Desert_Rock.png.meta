@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 8b185cf9ca779d040a45796110a1f43f
-timeCreated: 1506939253
-=======
-guid: 19e6765bdfba2b8438645b97735ba14f
-timeCreated: 1506699265
->>>>>>> e5be68addda4aa8f7295e476d3b9c8a9e83c161c
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -35,11 +28,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: -1
->>>>>>> e5be68addda4aa8f7295e476d3b9c8a9e83c161c
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -88,17 +77,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
-=======
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
->>>>>>> e5be68addda4aa8f7295e476d3b9c8a9e83c161c
   spriteSheet:
     serializedVersion: 2
     sprites: []
