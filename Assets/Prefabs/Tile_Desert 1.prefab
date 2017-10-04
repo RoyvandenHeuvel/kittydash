@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212943394592025010}
   - component: {fileID: 114872115200395388}
   m_Layer: 0
-  m_Name: Tile_ForestDesertTransition
+  m_Name: Tile_Desert 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1769073411862174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 70, z: 0}
+  m_LocalPosition: {x: 0, y: 310, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,14 +56,14 @@ MonoBehaviour:
     type: 2}
   NextTile: {fileID: 1769073411862174, guid: 088194219ebbd8b448eef0846acc9c9e, type: 2}
   DecorationGroups:
-  - {fileID: 1742388229626818, guid: 2205ac7dba7d75e4ab50de41e4d53317, type: 2}
+  - {fileID: 1745770324959002, guid: eeae792d1e9f44a359d43dab3e91969b, type: 2}
+  - {fileID: 1151407524123146, guid: 0770c86980ac548b8a97ac4503658cbe, type: 2}
   ObstacleCollectableGroups:
-  - {fileID: 1746775352829000, guid: a462ee21584a8fa49a4544bc2d6e72a8, type: 2}
-  - {fileID: 1757124362238248, guid: c3e12ecc35054e04dbb90d2970ba8bd5, type: 2}
-  - {fileID: 1076360218951498, guid: b1d922b544c4f8d48a83817be838d2f6, type: 2}
+  - {fileID: 1981798201125018, guid: 9c1d1e316d225e0418cd12909e66ebb6, type: 2}
+  - {fileID: 1802228694255404, guid: 28837beb944888b42ab8fe7db50e4a8b, type: 2}
   TileHeight: 10
-  Music: {fileID: 8300000, guid: 4fca7311068b248ccb396841df354014, type: 3}
-  MusicVolume: 0
+  Music: {fileID: 8300000, guid: f7efeafd60fe94ac9a8fd4cbbd519972, type: 3}
+  MusicVolume: 0.5
 --- !u!212 &212943394592025010
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 514f68e99712b6443b2a31f7d00d7a73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2431f8c6da8e83c479656f36bb442ff8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
