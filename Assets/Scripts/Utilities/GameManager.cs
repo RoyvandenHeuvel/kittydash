@@ -84,6 +84,9 @@ namespace Assets.Scripts
                 (bool success) => { Debug.Log("Achievement progress updated? " + success); }
             );
 
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_very_hungry_kitty, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_out_of_lives, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+
             PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_out_of_lives, 1,
                 (bool success) => { Debug.Log("Achievement progress updated? " + success); }
             );
