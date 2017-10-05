@@ -62,6 +62,11 @@ namespace Assets.Scripts
             Save();
         }
 
+        public void ShowAchievements()
+        {
+            PlayGamesPlatform.Instance.ShowAchievementsUI((UIStatus status) => { Debug.Log(status); });
+        }
+
         public void ShowLeaderboard()
         {
             PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
@@ -73,12 +78,29 @@ namespace Assets.Scripts
             SaveData.Coins += score;
             GameData.Coins = 0;
 
+            Debug.Log(string.Format("Total coins: {0}", SaveData.Coins));
+
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_hungry_kitty, SaveData.Coins * 0.1d,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_very_hungry_kitty, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_out_of_lives, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_out_of_lives, 1,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_very_hungry_kitty, score,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
             PlayGamesPlatform.Instance.ReportScore(score, GPGSIds.leaderboard_leaderboard, (bool success) =>
             {
                 Debug.Log(string.Format("Posting score to leaderboard was a success? {0}", success));
             });
 
-            PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
+            ShowLeaderboard();
 
             UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
         }

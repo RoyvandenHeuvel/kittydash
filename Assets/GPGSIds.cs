@@ -24,6 +24,9 @@
 
 public static class GPGSIds
 {
+        public const string achievement_out_of_lives = "CgkI6cKp6MweEAIQBA"; // <GPGSID>
+        public const string achievement_hungry_kitty = "CgkI6cKp6MweEAIQAw"; // <GPGSID>
+        public const string achievement_very_hungry_kitty = "CgkI6cKp6MweEAIQBQ"; // <GPGSID>
         public const string leaderboard_leaderboard = "CgkI6cKp6MweEAIQAQ"; // <GPGSID>
 
 }
