@@ -589,7 +589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: HideOnRelease
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: MovementRange
@@ -617,11 +617,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_RotationOrder
@@ -657,6 +657,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
