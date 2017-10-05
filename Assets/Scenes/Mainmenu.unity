@@ -3051,8 +3051,7 @@ Transform:
 --- !u!1 &1023896964
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1672116125064204, guid: 4427cd320c842494da3d2e369a1fb5dd,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
@@ -3068,8 +3067,7 @@ GameObject:
 --- !u!212 &1023896965
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 212312364726580016, guid: 4427cd320c842494da3d2e369a1fb5dd,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023896964}
   m_Enabled: 1
@@ -3111,8 +3109,7 @@ SpriteRenderer:
 --- !u!4 &1023896966
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4558816815192078, guid: 4427cd320c842494da3d2e369a1fb5dd,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023896964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
