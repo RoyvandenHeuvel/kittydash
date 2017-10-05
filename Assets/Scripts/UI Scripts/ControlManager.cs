@@ -1,7 +1,10 @@
 ﻿using Assets.Scripts;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ControlManager : MonoBehaviour {
+public class ControlManager : MonoBehaviour
+{
 
     public GameObject DPadControls;
     public GameObject JoystickControls;
@@ -16,6 +19,23 @@ public class ControlManager : MonoBehaviour {
                 break;
             case Controls.Joystick:
                 JoystickControls.SetActive(true);
+                var images = JoystickControls.GetComponentsInChildren<Image>();
+                if (GameManager.Instance.SaveData.JoystickVisible)
+                {
+                    foreach (var image in images)
+                    {
+                        image.color = new Color(255, 255, 255, 255);
+                    }
+
+                }
+                else
+                {
+                    foreach (var image in images)
+                    {
+                        image.color = new Color(255, 255, 255, 0);
+                    }
+                }
+                JoystickControls.GetComponent<Image>().color = new Color(0, 0, 0, 0);
                 DPadControls.SetActive(false);
                 break;
             default:

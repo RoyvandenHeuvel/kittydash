@@ -6,15 +6,9 @@ namespace Assets.Scripts
     {
         void OnCollisionEnter2D(Collision2D collision)
         {
-            // TODO: Proper game over.
-            //SoundManager.instance.PlaySound("GameOver");
             if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                if (GameManager.Instance.GameData.Coins > GameManager.Instance.SaveData.PersonalBest)
-                {
-                    GameManager.Instance.SaveData.PersonalBest = GameManager.Instance.GameData.Coins;
-                }
-                UnityEngine.SceneManagement.SceneManager.LoadScene("scene_gameover");
+                GameManager.Instance.PostHighScore();
             }
         }
 
