@@ -225,7 +225,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: C:/Users/Boy/Desktop/roy.keystore
-  AndroidKeyaliasName: 
+  AndroidKeyaliasName: royrelease
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 0
