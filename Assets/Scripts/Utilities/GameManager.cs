@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -23,6 +25,21 @@ namespace Assets.Scripts
 
         void Awake()
         {
+            PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+                .Build();
+
+            GooglePlayGames.PlayGamesPlatform.InitializeInstance(config);
+            GooglePlayGames.PlayGamesPlatform.Activate();
+
+            Social.localUser.Authenticate((bool success) =>
+            {
+                Debug.Log(success);
+                if (!success)
+                {
+                    Application.Quit();
+                }
+            });
+
             if (_instance == null)
             {
                 saveLocation = Application.persistentDataPath + "/save.dat";
@@ -45,26 +62,32 @@ namespace Assets.Scripts
             Save();
         }
 
+        public void ShowLeaderboard()
+        {
+            PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
+        }
+
         public void PostHighScore()
         {
             int score = GameData.Coins;
             SaveData.Coins += score;
             GameData.Coins = 0;
-            if (SaveData.PlayerName != string.Empty && SaveData.PlayerName != null)
+
+            PlayGamesPlatform.Instance.ReportScore(score, GPGSIds.leaderboard_leaderboard, (bool success) =>
             {
-                StartCoroutine(HighScoreUtilities.PostScores(SaveData.PlayerName, score));
-            }
-            else
-            {
-                StartCoroutine(HighScoreUtilities.PostScores("Anonymous", score));
-            }
+                Debug.Log(string.Format("Posting score to leaderboard was a success? {0}", success));
+            });
+
+            PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
         }
 
         public void Save()
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Open(saveLocation, FileMode.OpenOrCreate);
-            
+
             bf.Serialize(fs, SaveData);
             fs.Close();
         }

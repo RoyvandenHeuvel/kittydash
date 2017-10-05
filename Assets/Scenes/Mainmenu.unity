@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1042,7 +1042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea298d7e439b6ec44b1e57d7c25fbc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 491639770}
   SceneName: scene_options
 --- !u!114 &491639770
 MonoBehaviour:
@@ -2028,9 +2027,9 @@ GameObject:
   - component: {fileID: 735666684}
   - component: {fileID: 735666683}
   - component: {fileID: 735666682}
-  - component: {fileID: 735666681}
   - component: {fileID: 735666680}
   - component: {fileID: 735666679}
+  - component: {fileID: 735666681}
   m_Layer: 5
   m_Name: HighScoreButton
   m_TagString: Untagged
@@ -2099,11 +2098,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 735666677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea298d7e439b6ec44b1e57d7c25fbc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: abc6afe0b9933d64c8722a6716d835f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 735666682}
-  SceneName: scene_highscore
 --- !u!114 &735666682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2558,7 +2555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea298d7e439b6ec44b1e57d7c25fbc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 874054507}
   SceneName: Scene_Ingame
 --- !u!114 &874054511
 MonoBehaviour:
@@ -2642,6 +2638,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d9394d5e9501eb4e86ebe7caf98c2a7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &955563150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 955563152}
+  - component: {fileID: 955563151}
+  m_Layer: 0
+  m_Name: GooglePlayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &955563151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955563150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b744019f26ae140afcf5f011b747b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &955563152
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955563150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2486507, y: 0.8103032, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959480861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea298d7e439b6ec44b1e57d7c25fbc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 1061872314}
   SceneName: scene_tutorial
 --- !u!114 &1061872314
 MonoBehaviour:

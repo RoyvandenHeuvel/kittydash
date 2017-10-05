@@ -224,7 +224,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Boy/Desktop/roy.keystore
+  AndroidKeystoreName: C:/Users/Roy van den Heuvel/Desktop/roy.keystore
   AndroidKeyaliasName: 
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
