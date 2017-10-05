@@ -443,6 +443,38 @@ Prefab:
       propertyPath: m_Color.a
       value: 0.39215687
       objectReference: {fileID: 0}
+    - target: {fileID: 22421832, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22421832, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22407522, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22407522, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22421832, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 22421832, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22407522, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -43
+      objectReference: {fileID: 0}
+    - target: {fileID: 22407522, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b75bc7ed435ad74409d972e2615f10d6, type: 2}
   m_IsPrefabParent: 0
@@ -515,6 +547,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1614259031}
     m_Modifications:
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 22400004, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -633,7 +669,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[1].value
-      value: 1
+      value: 0.5052228
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[0].inSlope
@@ -649,19 +685,43 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[1].inSlope
-      value: 0
+      value: 0.93102455
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[1].outSlope
-      value: 0
+      value: 0.93102455
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
       propertyPath: SensitivityCurve.m_Curve.Array.data[1].tangentMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
-      propertyPath: m_Color.a
-      value: 0
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[1].time
+      value: 0.36809623
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[2].time
+      value: 0.61239743
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[2].value
+      value: 0.73255336
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[2].inSlope
+      value: 0.833869
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[2].outSlope
+      value: 0.833869
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[3].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
+      propertyPath: SensitivityCurve.m_Curve.Array.data[3].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb945e2a87718084184a72db9cf1ee27, type: 2}
@@ -1537,6 +1597,22 @@ Prefab:
     - target: {fileID: 11451720, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
       propertyPath: m_Color.a
       value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 22421908, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22421908, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22482606, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22482606, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cd0f2565c094c14c89345b5d6081634, type: 2}
