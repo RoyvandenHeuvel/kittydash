@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299166602908186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 340, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,13 +56,14 @@ MonoBehaviour:
     type: 2}
   NextTile: {fileID: 1887355103166942, guid: 9bc1c6e6d01b94541a4499fa2fc153a4, type: 2}
   DecorationGroups:
-  - {fileID: 1745770324959002, guid: eeae792d1e9f44a359d43dab3e91969b, type: 2}
-  - {fileID: 1151407524123146, guid: 0770c86980ac548b8a97ac4503658cbe, type: 2}
+  - {fileID: 1698354292850618, guid: 15e7d5024866f4522a08619e8088129f, type: 2}
+  - {fileID: 1909948340486146, guid: a704fc63e78954e059f2f14f958c695b, type: 2}
   ObstacleCollectableGroups:
-  - {fileID: 1981798201125018, guid: 9c1d1e316d225e0418cd12909e66ebb6, type: 2}
-  - {fileID: 1802228694255404, guid: 28837beb944888b42ab8fe7db50e4a8b, type: 2}
+  - {fileID: 1310801027828122, guid: 12b5e47d721b39b49b297a803fd7bf24, type: 2}
+  - {fileID: 1715232794293938, guid: cc3c4eca64c7e5e4aafe9b6529c39329, type: 2}
+  - {fileID: 1731987121583144, guid: c77cd8ff1ef3fd04c9477468190328cd, type: 2}
   TileHeight: 10
-  Music: {fileID: 8300000, guid: f7efeafd60fe94ac9a8fd4cbbd519972, type: 3}
+  Music: {fileID: 8300000, guid: 7f6ee70ed060d476db8cf4550c3c4d01, type: 3}
   MusicVolume: 0.5
 --- !u!212 &212507039276798960
 SpriteRenderer:

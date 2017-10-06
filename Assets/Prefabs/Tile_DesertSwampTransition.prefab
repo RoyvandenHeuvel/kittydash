@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216020042626870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 150, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
     type: 2}
   NextTile: {fileID: 1299166602908186, guid: ae8cb44a623864af29e99d37ce26f1ec, type: 2}
   DecorationGroups:
-  - {fileID: 1745770324959002, guid: eeae792d1e9f44a359d43dab3e91969b, type: 2}
+  - {fileID: 1754013976941530, guid: e801a2298bce54c508b9610fe9d7edcd, type: 2}
   ObstacleCollectableGroups:
   - {fileID: 1981798201125018, guid: 9c1d1e316d225e0418cd12909e66ebb6, type: 2}
   - {fileID: 1802228694255404, guid: 28837beb944888b42ab8fe7db50e4a8b, type: 2}
