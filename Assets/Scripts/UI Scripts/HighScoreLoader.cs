@@ -8,6 +8,6 @@ public class HighScoreLoader : MonoBehaviour
 {
     void Start()
     {
-        StartCoroutine(HighScoreUtilities.GetScores(GetComponent<Text>()));
+        Social.ShowLeaderboardUI();
     }
 }

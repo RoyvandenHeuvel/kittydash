@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -23,6 +25,21 @@ namespace Assets.Scripts
 
         void Awake()
         {
+            PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+                .Build();
+
+            GooglePlayGames.PlayGamesPlatform.InitializeInstance(config);
+            GooglePlayGames.PlayGamesPlatform.Activate();
+
+            Social.localUser.Authenticate((bool success) =>
+            {
+                Debug.Log(success);
+                if (!success)
+                {
+                    Application.Quit();
+                }
+            });
+
             if (_instance == null)
             {
                 saveLocation = Application.persistentDataPath + "/save.dat";
@@ -45,26 +62,55 @@ namespace Assets.Scripts
             Save();
         }
 
+        public void ShowAchievements()
+        {
+            PlayGamesPlatform.Instance.ShowAchievementsUI((UIStatus status) => { Debug.Log(status); });
+        }
+
+        public void ShowLeaderboard()
+        {
+            PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
+        }
+
         public void PostHighScore()
         {
             int score = GameData.Coins;
+            if(score > SaveData.PersonalBest)
+            {
+                SaveData.PersonalBest = score;
+            }
             SaveData.Coins += score;
             GameData.Coins = 0;
-            if (SaveData.PlayerName != string.Empty && SaveData.PlayerName != null)
+
+            Debug.Log(string.Format("Total coins: {0}", SaveData.Coins));
+
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_hungry_kitty, SaveData.Coins * 0.1d,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_very_hungry_kitty, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_out_of_lives, 0.0d, (bool success) => { Debug.Log("Achievement unlocked?" + success); });
+
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_out_of_lives, 1,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_very_hungry_kitty, score,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+            PlayGamesPlatform.Instance.ReportScore(score, GPGSIds.leaderboard_leaderboard, (bool success) =>
             {
-                StartCoroutine(HighScoreUtilities.PostScores(SaveData.PlayerName, score));
-            }
-            else
-            {
-                StartCoroutine(HighScoreUtilities.PostScores("Anonymous", score));
-            }
+                Debug.Log(string.Format("Posting score to leaderboard was a success? {0}", success));
+            });
+            
         }
 
         public void Save()
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Open(saveLocation, FileMode.OpenOrCreate);
-            
+
             bf.Serialize(fs, SaveData);
             fs.Close();
         }

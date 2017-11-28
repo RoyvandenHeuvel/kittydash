@@ -14,7 +14,7 @@ public class CloseCallScript : MonoBehaviour
     public int CloseCallDuration;
     public int CloseCallTextDuration;
     public int CloseCallFontSize;
-    public string CloseCallText;
+    public List<string> CloseCallMessages;
     public Font CloseCallFont;
     public Color CloseCallTextColor;
 
@@ -24,6 +24,11 @@ public class CloseCallScript : MonoBehaviour
     {
         _coroutineRunning = false;
         _player = GameObject.Find("Player").GetComponent<Player>();
+    }
+
+    private void OnDestroy()
+    {
+        GameObject.Destroy(UItextGO);
     }
 
     void Update()
@@ -54,11 +59,13 @@ public class CloseCallScript : MonoBehaviour
         _coroutineRunning = false;
     }
 
+    public GameObject UItextGO;
+
     private IEnumerator CloseCallTextHandler()
     {
         var canvasTransform = GameObject.Find("Canvas").transform;
         var canvasRect = GameObject.Find("Canvas").GetComponent<RectTransform>();
-        GameObject UItextGO = new GameObject("CloseCallText");
+        UItextGO = new GameObject("CloseCallText");
         UItextGO.transform.SetParent(canvasTransform);
 
         Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(this.transform.position);
@@ -73,10 +80,11 @@ public class CloseCallScript : MonoBehaviour
         Text text = UItextGO.AddComponent<Text>();
         text.horizontalOverflow = HorizontalWrapMode.Overflow;
         text.verticalOverflow = VerticalWrapMode.Overflow;
-        text.text = CloseCallText;
+        text.text = CloseCallMessages[Random.Range(0, CloseCallMessages.Count)];
         text.font = CloseCallFont;
         text.fontSize = CloseCallFontSize;
         text.color = CloseCallTextColor;
+        SoundManager.instance.PlaySound("Close");
         
 
         for (int i = CloseCallTextDuration; i > 0; i--)
@@ -85,6 +93,7 @@ public class CloseCallScript : MonoBehaviour
         }
 
         GameObject.Destroy(UItextGO);
+        UItextGO = null;
     }
 
     private IEnumerator CooldownHandler()

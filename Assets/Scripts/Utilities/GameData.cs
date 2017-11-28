@@ -7,6 +7,7 @@ using System.Collections.Generic;
 [Serializable]
 public class GameData
 {
+    public float TimeTileInterval;
     /// <summary>
     /// Speed the enemy has when further than EnemyNearbyDistance away.
     /// </summary>
@@ -58,6 +59,8 @@ public enum Controls
 [Serializable]
 public class SaveData
 {
+    public bool HideTutorials;
+    public bool JoystickVisible;
     public Controls SelectedControls;
     /// <summary>
     /// Name of the player for high score purposes.
@@ -67,4 +70,8 @@ public class SaveData
     /// Total coins the player possesses.
     /// </summary>
     public int Coins;
+    /// <summary>
+    /// The player's personal highest score.
+    /// </summary>
+    public int PersonalBest;
 }

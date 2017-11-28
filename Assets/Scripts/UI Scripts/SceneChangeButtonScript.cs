@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
 public class SceneChangeButtonScript : MonoBehaviour
 {
-    public Button @Button;
+    private Button @Button;
     public string SceneName;
 
     void Start()
@@ -17,6 +16,13 @@ public class SceneChangeButtonScript : MonoBehaviour
 
     void ChangeScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
+        if (SceneName.Equals("scene_tutorial") && GameManager.Instance.SaveData.HideTutorials)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_Ingame");
+        }
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
+        }
     }
 }

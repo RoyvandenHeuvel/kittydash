@@ -35,7 +35,7 @@ public class BasicAbilities : MonoBehaviour
     private void Start()
     {
         // Starting off with player being able to use their ability.
-        _enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
+        _enemy = GameObject.Find("Enemy (Hunter)").GetComponent<Enemy>();
         _buttonImage = GameObject.Find("BasicAbility").GetComponent<Image>();
 
         var newGO = new GameObject("Label");
@@ -66,7 +66,7 @@ public class BasicAbilities : MonoBehaviour
 
         if (_timeSinceLastUse >= _cooldown)
         {
-            _label.text = "READY!";
+            _label.text = "";
 
             _buttonImage.canvasRenderer.SetAlpha(1f);
             Ability toUseAbility = GetAbility();
@@ -116,7 +116,7 @@ public class BasicAbilities : MonoBehaviour
 
     private void Knockback()
     {
-        // TODO: Play animation & sound.
+        // TODO: Play sound.
         if (_enemy.IsInRange(Knockback_Range, this.gameObject.transform))
         {
             _knockbackDirection = _enemy.transform.position - this.gameObject.transform.position;
@@ -159,6 +159,7 @@ public class BasicAbilities : MonoBehaviour
         ballOfWool.GetComponent<BallOfWoolScript>().SlowFactor = BallOfWool_SlowFactor;
         ballOfWool.GetComponent<BallOfWoolScript>().SlowDuration = BallOfWool_SlowDuration;
         ballOfWool.transform.position = this.gameObject.transform.position;
+        SoundManager.instance.PlaySound("Toy");
     }
 
 }

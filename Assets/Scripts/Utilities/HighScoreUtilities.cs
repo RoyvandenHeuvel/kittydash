@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,34 +12,20 @@ namespace Assets.Scripts
 {
     public static class HighScoreUtilities
     {
-        private const string secretKey = "kitty_dash_highscore_key"; // Edit this value and make sure it's the same as the one stored on the server
-        private const string addScoreURL = "http://145.24.222.182/addscore.php?";
-		private const string highscoreURL = "http://145.24.222.182/display.php";
-
-        public static IEnumerator PostScores(string name, int score)
+        public static void PostScores(int score)
         {
-            // Supply it with a string representing the players name and the players score.
-            string hash = MD5Utilities.Md5Sum(name + score + secretKey);
-
-            string post_url = addScoreURL + "name=" + WWW.EscapeURL(name) + "&score=" + score + "&hash=" + hash;
-
-            // Post the URL to the site and create a download object to get the result.
-            WWW hs_post = new WWW(post_url);
-            yield return hs_post; // Wait until the download is done
+            PlayGamesPlatform.Activate();
+            Social.ReportScore(score, GPGSIds.leaderboard_leaderboard, (bool success) =>
+            {
+                Debug.Log(success);
+            });
         }
 
-        public static IEnumerator GetScores(Text text)
+        public static void GetScores()
         {
-            text.text = "Loading scores...";
-            WWW hs_get = new WWW(highscoreURL);
-            yield return hs_get;
+            GooglePlayGames.PlayGamesPlatform.Activate();
+            PlayGamesPlatform.Instance.ShowLeaderboardUI(GPGSIds.leaderboard_leaderboard);
 
-            if (Application.internetReachability == NetworkReachability.NotReachable)
-            {
-                text.text = "You don't have an active internet connection.";
-            }
-
-            text.text = hs_get.text; // this is a GUIText that will display the scores in game.
         }
     }
 }

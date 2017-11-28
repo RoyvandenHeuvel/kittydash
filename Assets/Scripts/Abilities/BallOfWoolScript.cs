@@ -21,6 +21,7 @@ public class BallOfWoolScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         collider.gameObject.GetComponent<EnemyFiniteStateMachine>().Slow(SlowDuration, SlowFactor);
+        SoundManager.instance.PlaySound("SlowEffect");
         GameObject.Destroy(gameObject);
     }
 }
