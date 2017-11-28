@@ -103,10 +103,7 @@ namespace Assets.Scripts
             {
                 Debug.Log(string.Format("Posting score to leaderboard was a success? {0}", success));
             });
-
-            ShowLeaderboard();
-
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Mainmenu");
+            
         }
 
         public void Save()

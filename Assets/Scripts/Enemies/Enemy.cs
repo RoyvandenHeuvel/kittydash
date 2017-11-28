@@ -8,7 +8,7 @@ namespace Assets.Scripts
         {
             if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                GameManager.Instance.PostHighScore();
+                GameOverManager.Instance.GameOver();
             }
         }
 
