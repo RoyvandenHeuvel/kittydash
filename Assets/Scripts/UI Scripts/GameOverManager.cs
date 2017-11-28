@@ -6,6 +6,7 @@ public class GameOverManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverOverlay;
     [SerializeField] private GameObject newRecord;
+    [SerializeField] private AudioClip gameOverMusic;
 
     private Canvas parentCanvas;
 
@@ -52,6 +53,7 @@ public class GameOverManager : MonoBehaviour
         closeCallScript.enabled = false;
         cameraMovement.enabled = false;
         player.GetComponentInChildren<Animator>().enabled = false;
+        player.GetComponent<AudioSource>().enabled = false;
         player.enabled = false;
 
         for (int i = 0; i < parentCanvas.transform.childCount; i++)
@@ -65,6 +67,9 @@ public class GameOverManager : MonoBehaviour
 
         gameOverOverlay.SetActive(true);
         newRecord.SetActive(false);
+
+        Tile.MusicHandler.GetComponent<AudioSource>().clip = gameOverMusic;
+        Tile.MusicHandler.GetComponent<AudioSource>().Play();
 
         if (GameManager.Instance.SaveData.PersonalBest < GameManager.Instance.GameData.Coins)
         {

@@ -14,6 +14,14 @@ public class Tile : MonoBehaviour
     public float MusicVolume;
 
     private static GameObject _musicHandler;
+    public static GameObject MusicHandler
+    {
+        get
+        {
+            return _musicHandler;
+        }
+    }
+
     private const int tileChangesRequired = 2;
     private static bool _transitioning;
     private static int _changedTileCount = 0;
