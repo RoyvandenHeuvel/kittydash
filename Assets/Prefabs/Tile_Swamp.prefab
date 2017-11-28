@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94aa66b10cb464e4b98217ce8bd2f622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransitionTile: {fileID: 1887355103166942, guid: 9bc1c6e6d01b94541a4499fa2fc153a4,
+  TransitionTile: {fileID: 1374808048987592, guid: 9852c16f48b79364193d9de773d281e1,
     type: 2}
   NextTile: {fileID: 1887355103166942, guid: 9bc1c6e6d01b94541a4499fa2fc153a4, type: 2}
   DecorationGroups:
@@ -74,6 +74,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -89,6 +90,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

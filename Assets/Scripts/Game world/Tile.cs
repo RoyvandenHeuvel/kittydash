@@ -30,6 +30,9 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Tile instantiated. Time since game started = " + Player.TimeSinceStart);
+
+
         if (_musicHandler == null)
         {
             _musicHandler = new GameObject("Background Music Handler");
@@ -58,7 +61,7 @@ public class Tile : MonoBehaviour
             }
         }
 
-        if (GameManager.Instance.GameData.Coins - (GameManager.Instance.GameData.ScoreTileInterval * _tileChanges) >= 0)
+        if (Player.TimeSinceStart - (GameManager.Instance.GameData.TimeTileInterval * _tileChanges) >= 0)
         {
             _tileChanges++;
             NextTile = TransitionTile;
@@ -73,9 +76,16 @@ public class Tile : MonoBehaviour
         if (DecorationGroups.Count > 0)
         {
             var decoration = DecorationGroups[Random.Range(0, DecorationGroups.Count)];
-            decoration.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 3);
 
             var decorationInstantiated = Instantiate(decoration);
+            if (_transitioning)
+            {
+                decorationInstantiated.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 3);
+            }
+            else
+            {
+                decorationInstantiated.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 2);
+            }
             decorationInstantiated.name = "Decoration group (Generated)";
             decorationInstantiated.transform.SetParent(GameObject.Find(Layers.Middleground).gameObject.transform);
         }
@@ -83,9 +93,16 @@ public class Tile : MonoBehaviour
         if (ObstacleCollectableGroups.Count > 0)
         {
             var obstacleDecoration = ObstacleCollectableGroups[Random.Range(0, ObstacleCollectableGroups.Count)];
-            obstacleDecoration.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 3);
 
             var obstacleCollectableInstantiated = Instantiate(obstacleDecoration);
+            if (_transitioning)
+            {
+                obstacleCollectableInstantiated.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 3);
+            }
+            else
+            {
+                obstacleCollectableInstantiated.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 2);
+            }
             obstacleCollectableInstantiated.name = "Obstacle/Decoration group (Generated)";
             obstacleCollectableInstantiated.transform.SetParent(GameObject.Find(Layers.Foreground).gameObject.transform);
         }
@@ -98,7 +115,17 @@ public class Tile : MonoBehaviour
         if (gameObject.IsLowerThanCamera() && !gameObject.IsHigherThanCamera())
         {
             var nextTileGameObject = Instantiate(NextTile);
-            nextTileGameObject.transform.position = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
+            var locationNewTile = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
+
+            if (_transitioning)
+            {
+                locationNewTile.z = 1;
+            }
+
+            nextTileGameObject.transform.position = locationNewTile;
+
+
+
             nextTileGameObject.name = "Tile (Generated)";
             nextTileGameObject.transform.SetParent(GameObject.Find(Layers.Background).transform);
 

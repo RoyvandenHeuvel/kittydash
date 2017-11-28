@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4046273975206636}
   - component: {fileID: 212014946811409272}
+  - component: {fileID: 114581342619970530}
   m_Layer: 0
   m_Name: Tundra_Grass (12)
   m_TagString: Untagged
@@ -36,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4697683357826368}
   - component: {fileID: 212097150549583104}
+  - component: {fileID: 114965814077950666}
   m_Layer: 0
   m_Name: Tundra_Grass (13)
   m_TagString: Untagged
@@ -69,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4788028598870550}
   - component: {fileID: 212394145756433754}
+  - component: {fileID: 114063365617319038}
   m_Layer: 0
   m_Name: Tundra_Grass (1)
   m_TagString: Untagged
@@ -85,6 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4567081102845482}
   - component: {fileID: 212212798323960172}
+  - component: {fileID: 114654772697076738}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (3)
   m_TagString: Untagged
@@ -101,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4625961969339482}
   - component: {fileID: 212067643404021142}
+  - component: {fileID: 114476488496323858}
   m_Layer: 0
   m_Name: Tundra_Grass (5)
   m_TagString: Untagged
@@ -117,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4603582909435346}
   - component: {fileID: 212824388818275054}
+  - component: {fileID: 114084487065435278}
   m_Layer: 0
   m_Name: Tundra_Grass (22)
   m_TagString: Untagged
@@ -133,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4361524481407694}
   - component: {fileID: 212211787285891560}
+  - component: {fileID: 114432892579016778}
   m_Layer: 0
   m_Name: Tundra_Hill_2 (1)
   m_TagString: Untagged
@@ -166,6 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4154092195135344}
   - component: {fileID: 212603861186819080}
+  - component: {fileID: 114112571530226678}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (1)
   m_TagString: Untagged
@@ -182,6 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068496627490102}
   - component: {fileID: 212805009882203326}
+  - component: {fileID: 114715157658322376}
   m_Layer: 0
   m_Name: Tundra_Grass_2
   m_TagString: Untagged
@@ -198,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4920797124552486}
   - component: {fileID: 212953496166273064}
+  - component: {fileID: 114819434308537622}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (8)
   m_TagString: Untagged
@@ -265,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4221726287489960}
   - component: {fileID: 212310274240084070}
+  - component: {fileID: 114259890423561032}
   m_Layer: 0
   m_Name: Tundra_Grass (20)
   m_TagString: Untagged
@@ -281,6 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4984707589143120}
   - component: {fileID: 212014335936890092}
+  - component: {fileID: 114583534636080876}
   m_Layer: 0
   m_Name: Tundra_Grass (6)
   m_TagString: Untagged
@@ -297,6 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4075348190123884}
   - component: {fileID: 212880286618040408}
+  - component: {fileID: 114806838432806688}
   m_Layer: 0
   m_Name: Tundra_Grass (7)
   m_TagString: Untagged
@@ -330,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4045692532961900}
   - component: {fileID: 212855869836943320}
+  - component: {fileID: 114125894712880450}
   m_Layer: 0
   m_Name: Tundra_Lake_2 (1)
   m_TagString: Untagged
@@ -346,6 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4707183870192708}
   - component: {fileID: 212810463416380310}
+  - component: {fileID: 114179363626279662}
   m_Layer: 0
   m_Name: Tundra_Grass (15)
   m_TagString: Untagged
@@ -362,6 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4391650585888270}
   - component: {fileID: 212297997914400164}
+  - component: {fileID: 114286454203455976}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (10)
   m_TagString: Untagged
@@ -378,6 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4220718197333852}
   - component: {fileID: 212987901099954626}
+  - component: {fileID: 114373934957417572}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (14)
   m_TagString: Untagged
@@ -394,6 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4735996936498048}
   - component: {fileID: 212615823002798734}
+  - component: {fileID: 114362630989794526}
   m_Layer: 0
   m_Name: Tundra_Grass (8)
   m_TagString: Untagged
@@ -427,6 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4638477189480310}
   - component: {fileID: 212917043728511522}
+  - component: {fileID: 114161347761452790}
   m_Layer: 0
   m_Name: Tundra_Grass (19)
   m_TagString: Untagged
@@ -443,6 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4640548744387140}
   - component: {fileID: 212284104834012148}
+  - component: {fileID: 114648692320732186}
   m_Layer: 0
   m_Name: Tundra_Grass (14)
   m_TagString: Untagged
@@ -459,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4421569130775896}
   - component: {fileID: 212402037859366934}
+  - component: {fileID: 114594831592994094}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (11)
   m_TagString: Untagged
@@ -492,6 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4929955042637446}
   - component: {fileID: 212809895776927206}
+  - component: {fileID: 114162647270793624}
   m_Layer: 0
   m_Name: Tundra_Grass (17)
   m_TagString: Untagged
@@ -508,6 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4668934157935268}
   - component: {fileID: 212264926774112274}
+  - component: {fileID: 114633742354625310}
   m_Layer: 0
   m_Name: Tundra_Lake_2 (2)
   m_TagString: Untagged
@@ -524,6 +547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4141552497318872}
   - component: {fileID: 212601463648782472}
+  - component: {fileID: 114889074952339214}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (7)
   m_TagString: Untagged
@@ -540,6 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4621282966540576}
   - component: {fileID: 212067727390067500}
+  - component: {fileID: 114239811864353536}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (9)
   m_TagString: Untagged
@@ -556,6 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438161415823126}
   - component: {fileID: 212068155843566042}
+  - component: {fileID: 114076399562870744}
   m_Layer: 0
   m_Name: Tundra_Grass (21)
   m_TagString: Untagged
@@ -572,6 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4123496449906188}
   - component: {fileID: 212867433186422250}
+  - component: {fileID: 114532137362480052}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (15)
   m_TagString: Untagged
@@ -622,6 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4387132757435556}
   - component: {fileID: 212997270620996232}
+  - component: {fileID: 114638996297832036}
   m_Layer: 0
   m_Name: Tundra_Lake_2 (3)
   m_TagString: Untagged
@@ -638,6 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4279442289863050}
   - component: {fileID: 212000418029741984}
+  - component: {fileID: 114273858653872318}
   m_Layer: 0
   m_Name: Tundra_Grass (18)
   m_TagString: Untagged
@@ -654,6 +683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4738052582579960}
   - component: {fileID: 212159563002099472}
+  - component: {fileID: 114125964959437844}
   m_Layer: 0
   m_Name: Tundra_Grass (3)
   m_TagString: Untagged
@@ -670,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4828811863608094}
   - component: {fileID: 212483604334729216}
+  - component: {fileID: 114451743516374422}
   m_Layer: 0
   m_Name: Tundra_Grass
   m_TagString: Untagged
@@ -737,6 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4350310641198230}
   - component: {fileID: 212861684111949380}
+  - component: {fileID: 114168796415256844}
   m_Layer: 0
   m_Name: Tundra_Lake_2
   m_TagString: Untagged
@@ -753,6 +785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4669287247963652}
   - component: {fileID: 212819705550336274}
+  - component: {fileID: 114370364693250196}
   m_Layer: 0
   m_Name: Tundra_Grass (4)
   m_TagString: Untagged
@@ -786,6 +819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4031503656230302}
   - component: {fileID: 212498692667944472}
+  - component: {fileID: 114126983246468426}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (13)
   m_TagString: Untagged
@@ -801,7 +835,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4622378794869950}
-  - component: {fileID: 212432888122509936}
+  - component: {fileID: 114760286541419398}
   m_Layer: 0
   m_Name: DecorationGroup_Swamp
   m_TagString: Untagged
@@ -835,6 +869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4638185449392792}
   - component: {fileID: 212016825298419466}
+  - component: {fileID: 114098964905453730}
   m_Layer: 0
   m_Name: Tundra_Hill_2
   m_TagString: Untagged
@@ -851,6 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4242106876814294}
   - component: {fileID: 212371868271456742}
+  - component: {fileID: 114767876461525234}
   m_Layer: 0
   m_Name: Tundra_Grass (16)
   m_TagString: Untagged
@@ -884,6 +920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4108895834438470}
   - component: {fileID: 212800620299606002}
+  - component: {fileID: 114423863859762684}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (6)
   m_TagString: Untagged
@@ -900,6 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4034816448551656}
   - component: {fileID: 212008821319624932}
+  - component: {fileID: 114556980236410500}
   m_Layer: 0
   m_Name: Tundra_Grass (2)
   m_TagString: Untagged
@@ -916,6 +954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4396735422564508}
   - component: {fileID: 212899940265217184}
+  - component: {fileID: 114663037674602636}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (12)
   m_TagString: Untagged
@@ -932,6 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4759530306812860}
   - component: {fileID: 212481082843289672}
+  - component: {fileID: 114211632363836138}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (2)
   m_TagString: Untagged
@@ -948,6 +988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4363731617230992}
   - component: {fileID: 212459716001097896}
+  - component: {fileID: 114107295116992498}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (4)
   m_TagString: Untagged
@@ -998,6 +1039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4137171245550892}
   - component: {fileID: 212025515568958602}
+  - component: {fileID: 114970904164424250}
   m_Layer: 0
   m_Name: Tundra_Grass (9)
   m_TagString: Untagged
@@ -1014,6 +1056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4191108013538736}
   - component: {fileID: 212995374247226840}
+  - component: {fileID: 114456591519569502}
   m_Layer: 0
   m_Name: Tundra_Grass (11)
   m_TagString: Untagged
@@ -1030,6 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4005824361740270}
   - component: {fileID: 212167142758605300}
+  - component: {fileID: 114586115451095042}
   m_Layer: 0
   m_Name: Tundra_Grass_2 (5)
   m_TagString: Untagged
@@ -1080,6 +1124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4252786605641206}
   - component: {fileID: 212280371793286504}
+  - component: {fileID: 114747980337007476}
   m_Layer: 0
   m_Name: Tundra_Grass (10)
   m_TagString: Untagged
@@ -1640,7 +1685,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1698354292850618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 360, z: 7}
+  m_LocalPosition: {x: 0, y: 780, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4350310641198230}
@@ -2021,12 +2066,111 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114063365617319038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053845080770944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114076399562870744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1413657664089214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114084487065435278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075121565211130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114098964905453730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723186849107484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114107295116992498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833617154009054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114109038384100012
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1699586563034208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114112571530226678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079692826692732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114125894712880450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208683158034264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114125964959437844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563872525590082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114126983246468426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698176428961136}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2043,12 +2187,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114161347761452790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317846215602688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114162647270793624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1367368972911348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114168796415256844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627914277652568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114179363626279662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285371219245800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114211632363836138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802936904416564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114237981542896208
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598935989519470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114239811864353536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1412977017355440}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2065,12 +2275,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114259890423561032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166786322353426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114260568150618956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312133128681800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114273858653872318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481142231368908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114286454203455976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291647617692510}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2087,6 +2330,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114362630989794526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1303045898983584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114370364693250196
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642929096652032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114373934957417572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1301860043442394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114421012206354974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2098,12 +2374,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114423863859762684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1766865675206530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114427869647443226
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149945361698724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114432892579016778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076750236221180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114451743516374422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565457240432738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114456591519569502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1925159317157812}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2131,6 +2451,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114476488496323858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062440594232438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114525254367492062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2142,12 +2473,133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114532137362480052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415671970779838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114556980236410500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770192240147944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114581342619970530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016063488791300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114583534636080876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173668257565662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114586115451095042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928302470218932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114593536499136828
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952666489580368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114594831592994094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359071639433732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114633742354625310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1396459855912094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114638996297832036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1438992821571894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114648692320732186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349855070739500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114654772697076738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059454178399986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114663037674602636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792113962231042}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2175,6 +2627,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114715157658322376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087495512681070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114735395726750566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2197,12 +2660,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114747980337007476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983175222304330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114759493847289740
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1882439038323824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114760286541419398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698354292850618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6220a489b74c3c644a5649970218636e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114767876461525234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1737869459594190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114806838432806688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178014021680688}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2219,12 +2726,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114819434308537622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091432790438024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114859246989011550
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1180804742107042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114889074952339214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1403429803035304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114965814077950666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031300749175762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114970904164424250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906426140150874}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db43ec5b32d4bd745a33b000f1a82be8, type: 3}
@@ -2239,6 +2790,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2254,6 +2806,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2281,6 +2834,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2296,6 +2850,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2323,6 +2878,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2338,6 +2894,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2365,6 +2922,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2380,6 +2938,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2407,6 +2966,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2422,6 +2982,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2449,6 +3010,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2464,6 +3026,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2491,6 +3054,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2506,6 +3070,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2533,6 +3098,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2548,6 +3114,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2575,6 +3142,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2590,6 +3158,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2617,6 +3186,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2632,6 +3202,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2659,6 +3230,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2674,6 +3246,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2701,6 +3274,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2716,6 +3290,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2743,6 +3318,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2758,6 +3334,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2785,6 +3362,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2800,6 +3378,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2827,6 +3406,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2842,6 +3422,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2869,6 +3450,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2884,6 +3466,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2911,6 +3494,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2926,6 +3510,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2953,6 +3538,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2968,6 +3554,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2995,6 +3582,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3010,6 +3598,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3037,6 +3626,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3052,6 +3642,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3079,6 +3670,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3094,6 +3686,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3121,6 +3714,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3136,6 +3730,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3163,6 +3758,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3178,6 +3774,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3205,6 +3802,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3220,6 +3818,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3247,6 +3846,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3262,6 +3862,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3289,6 +3890,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3304,6 +3906,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3331,6 +3934,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3346,6 +3950,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3373,6 +3978,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3388,6 +3994,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3415,6 +4022,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3430,6 +4038,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3457,6 +4066,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3472,6 +4082,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3499,6 +4110,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3514,6 +4126,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3532,48 +4145,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!212 &212432888122509936
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698354292850618}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c5dcefc0783dc491cac1b9dad96dda39, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.6, y: 0.51}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!212 &212445997724843690
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -3583,6 +4154,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3598,6 +4170,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3625,6 +4198,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3640,6 +4214,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3667,6 +4242,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3682,6 +4258,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3709,6 +4286,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3724,6 +4302,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3751,6 +4330,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3766,6 +4346,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3793,6 +4374,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3808,6 +4390,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3835,6 +4418,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3850,6 +4434,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3877,6 +4462,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3892,6 +4478,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3919,6 +4506,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3934,6 +4522,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3961,6 +4550,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3976,6 +4566,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4003,6 +4594,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4018,6 +4610,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4045,6 +4638,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4060,6 +4654,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4087,6 +4682,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4102,6 +4698,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4129,6 +4726,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4144,6 +4742,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4171,6 +4770,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4186,6 +4786,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4213,6 +4814,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4228,6 +4830,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4255,6 +4858,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4270,6 +4874,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4297,6 +4902,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4312,6 +4918,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4339,6 +4946,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4354,6 +4962,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4381,6 +4990,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4396,6 +5006,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4423,6 +5034,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4438,6 +5050,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4465,6 +5078,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4480,6 +5094,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4507,6 +5122,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4522,6 +5138,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4549,6 +5166,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4564,6 +5182,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4591,6 +5210,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4606,6 +5226,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4633,6 +5254,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4648,6 +5270,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4675,6 +5298,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4690,6 +5314,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4717,6 +5342,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4732,6 +5358,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4759,6 +5386,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4774,6 +5402,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4801,6 +5430,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4816,6 +5446,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4843,6 +5474,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4858,6 +5490,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4885,6 +5518,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4900,6 +5534,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4927,6 +5562,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4942,6 +5578,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -4969,6 +5606,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4984,6 +5622,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

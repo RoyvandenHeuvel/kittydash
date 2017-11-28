@@ -33,8 +33,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1383238562454448}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7158289, y: -2.5955925, z: 0.89453125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,12 +52,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveData:
+    HideTutorials: 0
+    JoystickVisible: 0
     SelectedControls: 0
     PlayerName: 
     Coins: 0
     PersonalBest: 0
   GameData:
-    ScoreTileInterval: 200
+    TimeTileInterval: 60
     EnemySpeedFar: 2
     EnemySpeedNearby: 1.5
     EnemyNearbyDistance: 12

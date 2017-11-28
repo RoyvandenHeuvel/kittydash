@@ -11,8 +11,11 @@ public class Player : MonoBehaviour
     
     public GameObject SlowAnimation;
 
+    public static float TimeSinceStart;
+
     void Start()
     {
+        TimeSinceStart = 0;
         _playerSpeed = GameManager.Instance.GameData.PlayerSpeed;
         xMax = 2.8f;
         xMin = -2.8f;
@@ -20,6 +23,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        TimeSinceStart += Time.deltaTime;
+
         Vector3 newPosition = gameObject.transform.position;
 
         // Setting the boundaries.

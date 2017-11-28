@@ -7,7 +7,7 @@ using System.Collections.Generic;
 [Serializable]
 public class GameData
 {
-    public float ScoreTileInterval;
+    public float TimeTileInterval;
     /// <summary>
     /// Speed the enemy has when further than EnemyNearbyDistance away.
     /// </summary>
