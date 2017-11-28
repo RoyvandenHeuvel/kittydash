@@ -35,12 +35,12 @@ public class TutorialScript : MonoBehaviour
             }
             else
             {
-                KittyDashSceneManager.LoadScene("Mainmenu");
+                KittyDashSceneManager.LoadScene("Scene_Ingame");
             }
         }
         else
         {
-            KittyDashSceneManager.LoadScene("Mainmenu");
+            KittyDashSceneManager.LoadScene("Scene_Ingame");
         }
     }
 }

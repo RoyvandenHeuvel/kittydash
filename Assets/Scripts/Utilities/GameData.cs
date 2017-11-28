@@ -59,6 +59,7 @@ public enum Controls
 [Serializable]
 public class SaveData
 {
+    public bool HideTutorials;
     public bool JoystickVisible;
     public Controls SelectedControls;
     /// <summary>

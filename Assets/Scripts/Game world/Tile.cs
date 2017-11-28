@@ -89,8 +89,8 @@ public class Tile : MonoBehaviour
     {
         if (gameObject.IsLowerThanCamera() && !gameObject.IsHigherThanCamera())
         {
-            NextTile.transform.position = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
             var nextTileGameObject = Instantiate(NextTile);
+            nextTileGameObject.transform.position = new Vector3(gameObject.transform.position.x, (gameObject.transform.position.y + (TileHeight * 3)), 0);
             nextTileGameObject.name = "Tile (Generated)";
             nextTileGameObject.transform.SetParent(GameObject.Find(Layers.Background).transform);
 

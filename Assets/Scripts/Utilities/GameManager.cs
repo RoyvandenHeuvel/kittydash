@@ -75,6 +75,10 @@ namespace Assets.Scripts
         public void PostHighScore()
         {
             int score = GameData.Coins;
+            if(score > SaveData.PersonalBest)
+            {
+                SaveData.PersonalBest = score;
+            }
             SaveData.Coins += score;
             GameData.Coins = 0;
 
