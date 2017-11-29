@@ -2,6 +2,7 @@
 using CnControls;
 using Assets.Scripts;
 using UnityEngine.UI;
+using GooglePlayGames;
 
 public class SpecialAbilities : MonoBehaviour
 {
@@ -98,6 +99,15 @@ public class SpecialAbilities : MonoBehaviour
 
     private void Claw()
     {
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_feral_cat, 1,
+            (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+        );
+
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_feral_cat_ii, 1,
+            (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+        );
+
+
         if (_enemy.IsInRange(Claw_Range, this.gameObject.transform))
         {
             var clawAnim = GameObject.Instantiate(Claw_Animation);
@@ -113,6 +123,10 @@ public class SpecialAbilities : MonoBehaviour
 
                 clawAnim.transform.position = _hound.transform.position;
                 SoundManager.instance.PlaySound("DogDead");
+
+                PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_not_a_scaredy_cat, 1,
+                    (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+                );
 
                 GameObject.Destroy(_hound.gameObject);
             }

@@ -1594,7 +1594,7 @@ Prefab:
     - target: {fileID: 114866802628320458, guid: 3081d532684d06046b7ae20afd4d4e18,
         type: 2}
       propertyPath: ScoreInterval
-      value: 30
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 82855181363498258, guid: 3081d532684d06046b7ae20afd4d4e18,
         type: 2}
@@ -1880,9 +1880,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 8d8e9bf60153c3f44a2b58435e9f8e6f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2870,9 +2870,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: ba707cb9d32cc4446acfa1b0e1e89dd8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

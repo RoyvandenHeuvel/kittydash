@@ -5,6 +5,7 @@ using CnControls;
 using Assets.Scripts;
 using UnityEngine.UI;
 using System;
+using GooglePlayGames;
 
 public class BasicAbilities : MonoBehaviour
 {
@@ -155,6 +156,14 @@ public class BasicAbilities : MonoBehaviour
 
     private void BallOfWool()
     {
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_woolen_madness, 1,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
+        PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_woolen_madness_ii, 1,
+                (bool success) => { Debug.Log("Achievement progress updated? " + success); }
+            );
+
         var ballOfWool = GameObject.Instantiate(BallOfWool_GameObject);
         ballOfWool.GetComponent<BallOfWoolScript>().SlowFactor = BallOfWool_SlowFactor;
         ballOfWool.GetComponent<BallOfWoolScript>().SlowDuration = BallOfWool_SlowDuration;

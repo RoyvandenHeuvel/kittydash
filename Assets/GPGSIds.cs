@@ -24,10 +24,15 @@
 
 public static class GPGSIds
 {
-        public const string achievement_out_of_lives = "CgkI6cKp6MweEAIQBA"; // <GPGSID>
-        public const string achievement_hungry_kitty = "CgkI6cKp6MweEAIQAw"; // <GPGSID>
-        public const string achievement_very_hungry_kitty = "CgkI6cKp6MweEAIQBQ"; // <GPGSID>
+        public const string achievement_feral_cat = "CgkI6cKp6MweEAIQCQ"; // <GPGSID>
+        public const string achievement_feral_cat_ii = "CgkI6cKp6MweEAIQCg"; // <GPGSID>
+        public const string achievement_woolen_madness = "CgkI6cKp6MweEAIQBw"; // <GPGSID>
         public const string leaderboard_leaderboard = "CgkI6cKp6MweEAIQAQ"; // <GPGSID>
+        public const string achievement_not_a_scaredy_cat = "CgkI6cKp6MweEAIQCw"; // <GPGSID>
+        public const string achievement_very_hungry_kitty = "CgkI6cKp6MweEAIQBQ"; // <GPGSID>
+        public const string achievement_woolen_madness_ii = "CgkI6cKp6MweEAIQCA"; // <GPGSID>
+        public const string achievement_hungry_kitty = "CgkI6cKp6MweEAIQAw"; // <GPGSID>
+        public const string achievement_out_of_lives = "CgkI6cKp6MweEAIQBA"; // <GPGSID>
 
 }
 
