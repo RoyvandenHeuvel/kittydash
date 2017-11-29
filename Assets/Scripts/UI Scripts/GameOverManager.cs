@@ -43,6 +43,7 @@ public class GameOverManager : MonoBehaviour
         foreach (var enemy in enemies)
         {
             enemy.GetComponentInChildren<Animator>().enabled = false;
+            enemy.GetComponent<CloseCallScript>().enabled = false;
             enemy.enabled = false;
         }
 
@@ -50,6 +51,7 @@ public class GameOverManager : MonoBehaviour
         {
             stateMachine.enabled = false;
         }
+
         closeCallScript.enabled = false;
         cameraMovement.enabled = false;
         player.GetComponentInChildren<Animator>().enabled = false;

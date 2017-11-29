@@ -62,6 +62,7 @@ MonoBehaviour:
   - {fileID: 1746775352829000, guid: a462ee21584a8fa49a4544bc2d6e72a8, type: 2}
   - {fileID: 1757124362238248, guid: c3e12ecc35054e04dbb90d2970ba8bd5, type: 2}
   - {fileID: 1076360218951498, guid: b1d922b544c4f8d48a83817be838d2f6, type: 2}
+  - {fileID: 1124902018346956, guid: bacc46d504499014fad74b85e4a236c7, type: 2}
   TileHeight: 10
   Music: {fileID: 8300000, guid: 4fca7311068b248ccb396841df354014, type: 3}
   MusicVolume: 0.5
@@ -74,6 +75,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -89,6 +91,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
