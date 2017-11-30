@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SlowDuration: 180
-  SlowFactor: 0.8
+  SlowFactor: 0.75
 --- !u!212 &212625608320997770
 SpriteRenderer:
   m_ObjectHideFlags: 1

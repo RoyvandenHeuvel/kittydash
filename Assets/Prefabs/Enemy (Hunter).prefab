@@ -286,7 +286,7 @@ MonoBehaviour:
   Hound: {fileID: 1625470593068270, guid: 07462d0f795305645af1cac0ef48c632, type: 2}
   xOffsetHound: 0
   yOffsetHound: -20
-  ScoreInterval: 30
+  ScoreInterval: 60
   WarningText: Dogs!
   WarningColor: {r: 1, g: 0, b: 0, a: 1}
   WarningFontSize: 70
